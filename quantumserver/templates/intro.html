@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTRODUCTION</title>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
+
+    <nav class="navbar navbar-inverse">
+        <div class="contianer-fluid ">
+            <!--LOGO-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+</head>
+<body>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('intro') }}">Introduction</a>
+  <a href="{{ url_for('net') }}">Networking</a>
+  <a href="{{ url_for('crypto') }}">Cryptography</a>
+  <a href="{{ url_for('teleport') }}">Quantum Teleportation</a>
+  <a href="{{ url_for('ai') }}">AI in Quantum Computing</a>
+  <a href="{{ url_for('compute') }}">Quantum Computers</a>
+  <a href="{{ url_for('iot') }}">Iot with Quantum Computing</a>
+  <a href="{{ url_for('material') }}">Material science in Quantum Computing</a>
+  <a href="{{ url_for('tutorial') }}">Videos and Podcasts</a>
+  <a href="{{ url_for('tools') }}">Tools for Quantum Programming</a>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+<h1>INTRODCUTION</h1>
+<p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
+<p>This aritcle contains the understanding information about the quntum computing. This will be used for the study of
+the domain and associated research for relevant usecases.</p>
+
+<h2>Qubits, superposition, entanglement -- the works</h2>
+<p>This is the simple form of the loss function, which tries the understand the difference between predicted value
+(vs) actual value. Square if generally done to not nullify the negative difference of the value.</p>
+<img src="{{url_for('static', filename='AT_T.png')}}" alt=""><br>
+
+<p>Superposition means a single qubit can store not merely a 0 or a 1, as a classical bit does, but in effect both at the same time. (Yes, that's like a light being both on and off simultaneously). Two qubits can store four states simultaneously, three qubits can store eight states, four qubits can store 16 and so on. Entanglement links these qubits together so that when you perform some kind of processing operation, you perform it on all possible combinations of those qubits' 0s and 1s at the same time. In other words, the difference between classical and quantum computing is that four bits can store one of 16 possible numbers while four qubits can store all 16. With superposition and entanglement -- and an awful lot of expensive, ultracold hardware to get them to work reliably -- quantum computers can rapidly explore a vast number of possible solutions to a problem.</p>
+
+<h2>A primer on quantum computing</h2>
+<p>A quantum computer is any device that uses the principles of quantum mechanics to perform calculations. To store and manipulate information, regular computers use binary units called bits, which can represent one of two possible states: 0 or 1. Quantum machines rely on quantum bits (or qubits), which can be both a 0 and 1 at the same time. This phenomenon, called superposition, allows such devices to perform certain tasks much faster than their bit-based counterparts. Another foundational term in quantum theory is entanglement. When two particles are entangled, they exist in the same quantum state, and change in the state if one prompts its peer to change accordingly, no matter how far apart the two are in physical space. Pairing qubits this way leads to the exponential growth in the quantum computer’s computational power.</p>
+
+</p>The state of superposition, which is necessary to perform calculations, is difficult to achieve and enormously hard to maintain. Physicists use laser and microwave beams to put qubits in this working state and then employ an array of techniques to preserve it from the slightest are  xtremely error-prone due to the fragility of the working condition, which dissipates in a process called de-coherence before most operations can be executed. Quantum computational power is determined by how many qubits a machine can simultaneously leverage. Starting with a humble two qubits achieved in the first experiments in the late 1990s, the most powerful quantum computer today, operated by Google, can use up to 72 qubits. </p>
+
+<h2>What is Quantum Computing? (MICROSOFT PERCEPTION)</h2>
+</p>A host of new computer technologies have emerged within the last few years, and quantum computing is arguably the technology requiring the greatest paradigm shift on the part of developers. Quantum computers were proposed in the 1980s by Richard Feynman and Yuri Manin. The intuition behind quantum computing stemmed from what was often seen as one of the greatest embarrassments of physics: remarkable scientific progress faced with an inability to model even simple systems. You see, quantum mechanics was developed between 1900 and 1925 and it remains the cornerstone on which chemistry, condensed matter physics and technologies ranging from computer chips to LED lighting ultimately rests. Yet despite these successes, even some of the simplest systems seemed to be beyond the human ability to model with quantum mechanics. This is because simulating systems of even a few dozen interacting particles requires more computing power than any conventional computer can provide over thousands of years!
+There are many ways to understand why quantum mechanics is hard to simulate. Perhaps the simplest is to see that quantum theory can be interpreted as saying that matter, at a quantum level, is simultaneously in a host of different possible configurations (known as states) at the same time. Unlike classical probability theory, these many configurations of the quantum state, which can be potentially observed, may interfere with each other like waves in a tidepool. This interference prevents the use of statistical sampling to obtain the quantum state configurations. Rather, we have to track every possible configuration a quantum system could be in if we want to understand the quantum evolution.</p>
+</p>Consider a system of electrons where electrons can be in any of say 4040 positions. The electrons therefore may be in any of 240240configurations (since each position can either have or not have an electron). To store the quantum state of the electrons in a conventional computer memory would require in excess of 130130 GB of memory! This is substantial, but within the reach of some computers. If we allowed the particles to be in any of 4141 positions, there would be twice as many configurations at 241241 which in turn would require more than 260260 GB of memory to store the quantum state. This game of increasing the number of positions cannot be played indefinitely if we want to store the state conventionally as we quickly exceed memory capacities of the world's most powerful machines. At a few hundred electrons the memory required to store the system exceeds the number of particles in the universe; thus there is no hope with our conventional computers to ever simulate their quantum dynamics. And yet in nature, such systems readily evolve in time according to quantum mechanical laws, blissfully unaware of the inability to engineer and simulate their evolution with conventional computing power.
+This observation lead those with an early vision of quantum computing to ask a simple yet powerful question: can we turn this difficulty into an opportunity? Specifically, if quantum dynamics are hard to simulate what would happen if we were to build hardware that had quantum effects as fundamental operations? Could we simulate systems of interacting particles using a system that exploits exactly the same laws that govern them naturally? Could we investigate tasks that are entirely absent from nature, yet follow or benefit from quantum mechanical laws? These questions led to the genesis of quantum computing.</p>
+</p>The foundational core of quantum computing is to store information in quantum states of matter and to use quantum gate operations to compute on that information, by harnessing and learning to "program" quantum interference. An early example of programming interference to solve a problem thought to be hard on our conventional computers was done by Peter Shor in 1994 for a problem known as factoring. Solving factoring brings with it the ability to break many of our public key cryptosystems underlying the security of e-commerce today, including RSA and Elliptic Curve Cryptography. Since that time, fast and efficient quantum computer algorithms have been developed for many of our hard classical tasks: simulating physical systems in chemistry, physics, and materials science, searching an unordered database, solving systems of linear equations, and machine learning.</p>
+</p>Designing a quantum program to harness interference may sound like a daunting challenge, and while it is, many techniques and tools, including our Microsoft Quantum Development Kit, have been introduced to make quantum programming and algorithm development more accessible. There are a handful of basic strategies that can be used to manipulate quantum interference in a way useful for computing, while at the same time not causing the solution to be lost in a tangle of quantum possibilities. Quantum programming is a distinct art from classical programming requiring very different tools to understand and express quantum algorithmic thinking. Indeed, without general tools to aid a quantum developer in tackling the art of quantum programming, quantum algorithmic development is not so easy.</p>
+<p>We present the Microsoft Quantum Development Kit to empower a growing community with tools to unlock the quantum revolution for their tasks, problems, and solutions. Our high-level programming language, Q#, was designed to address the challenges of quantum information processing; it is integrated in a software stack that enables a quantum algorithm to be compiled down to the primitive operations of a quantum computer. Before approaching the programming language, it's helpful to review the basic principles on which quantum computing is based. We will take the fundamental rules of quantum computing to be axioms, rather than detailing their foundations in quantum mechanics. Additionally, we will assume basic familiarity with linear algebra (vectors, matrices etc). If a deeper study of quantum computing history and principles is desired, we refer you to the reference section containing more information.</p>
+</div>
+</body>
+</html>

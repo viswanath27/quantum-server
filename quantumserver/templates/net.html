@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOOLS</title>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <nav class="navbar navbar-inverse">
+        <div class="contianer-fluid ">
+            <!--LOGO-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+</head>
+<body>
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('intro') }}">Introduction</a>
+  <a href="{{ url_for('net') }}">Networking</a>
+  <a href="{{ url_for('crypto') }}">Cryptography</a>
+  <a href="{{ url_for('teleport') }}">Quantum Teleportation</a>
+  <a href="{{ url_for('ai') }}">AI in Quantum Computing</a>
+  <a href="{{ url_for('compute') }}">Quantum Computers</a>
+  <a href="{{ url_for('iot') }}">Iot with Quantum Computing</a>
+  <a href="{{ url_for('material') }}">Material science in Quantum Computing</a>
+  <a href="{{ url_for('tutorial') }}">Videos and Podcasts</a>
+  <a href="{{ url_for('tools') }}">Tools for Quantum Programming</a>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+
+<h1>NETWORKING DOMAIN</h1>
+<p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
+<h2><a href="https://www.cnet.com/google-amp/news/att-hopes-quantum-networking-will-amplify-the-power-of-quantum-computing/?__twitter_impression=true">[Article 1] : AT&T – QUANTUM NETWORKING</a></h2>
+<p>Quantum computing, the processing technology that's turbocharged by the weirdness of subatomic physics, is only just becoming a reality. But the newness of the field hasn't stopped AT&T from going another step further. The telecommunications giant is researching technology to link quantum computers, hoping to amplify their power much the way networking of conventional computers led to massive supercomputers and services spread across the globe. Quantum networking could lead to a similar leap for quantum computers and possibly form the foundation for a quantum internet.</p>
+
+<p>AT&T doesn't expect to bring this technology to market anytime soon. Instead, it's trying to figure out what's possible and bring it closer to commercial reality through a partnership called Intelligent Quantum Networks and Technologies (<a href="http://inqnet.caltech.edu/">INQNET</a>). The work involves researchers from the California Institute of Technology, Stanford University, national laboratories, startups, the military and other institutions. "How do you get it to a point where you can scale it so you can afford to buy one of these things?" said AT&T Chief Technology Officer Andre Fuetsch, sharing details of the effort for the first time at the AT&T Foundry in Palo Alto, California, the research and development lab that's headquarters for the quantum networking project. "We want to make sure we're there and we're relevant." The mind-bending physics of quantum mechanics, which governs the workings of atoms and smaller particles, are good for more than superhero movie plot twists. They're also well suited to the computing needs of designing new medical drugs, optimizing financial investments and cracking today's encryption. Qubits, the fundamental element of quantum computing, allow for the transmission of more information than conventional computer processors, which handle data as a bit -- a state of 1 or 0. Quantum computers use qubits, which can store multiple states at the same time. The goal of quantum networking is to link qubits across multiple quantum computers. "You could allow qubits to interact with each other as if they were next to each other," said Soren Telfer, director of the AT&T Foundry in Palo Alto.</p>
+
+<h3>Quantum computing benefits</h3>
+If researchers crack the challenges, quantum networks could let you:
+<ul>
+<li>Link multiple machines together to tackle larger problems, similar to how multiple classical computers today can share databases or cooperate on calculations.</li>
+<li>Build a network of quantum sensors that feed data to a quantum computer. These could be accelerometers for detecting motion in super-sensitive gravitational research or navigational guidance. </li>
+<li>Quantum sensing is "much more feasible in the near term" than more elaborate quantum communications, says Yewon Gim, a senior technical staff member at the AT&T Foundry.</li>
+<li>Secure communications. With quantum networks, "you will always know if someone is eavesdropping," said J.D. Dulny, chief scientist at consulting firm Booz Allen Hamilton, which isn't a member of AT&T's alliance. "You can't duplicate quantum state," so it's impossible for an eavesdropper to elbow in on a quantum-network communication link, he said.</li>
+<li>Let competitors cooperate on "secure multiparty computation," in which proprietary data from each could be combined for calculations without the parties revealing their secrets, Telfer said.</li>
+</ul>
+
+
+<p>That potential performance boost is why companies like IBM, Rigetti Computing, D-Wave and Google are racing to pack as many qubits onto quantum chips as possible. Entanglement is important to quantum networking, too, because it works even for separated qubits. Albert Einstein's famous objection to quantum mechanics -- "spooky action at a distance" -- that's what we're talking about. (Experimental physics proved Einstein wrong on this point.)</p>
+
+<p>"Linking two quantum computers or quantum chips together while maintaining their quantum states is an active area of research," said Jim Clarke, Intel Labs' director of quantum hardware. (Intel isn't a member of AT&T's alliance.) Academic research has shown evidence that long-range quantum coupling works, too, he said. But because quantum networking "is still very much in the research stage," you should expect progress in isolated quantum computers to come sooner. </p>
+
+<h3>First steps in quantum networking</h3>
+<p>Quantum sensor networks are likely the first quantum networking application. The holy grail, though, is packing the state of a quantum computer into a photon of light transmitted over fiber-optic lines to another quantum computer, an approach that relies on an idea called transduction.</p>
+
+<p>The transduction problem is particularly thorny, said Dan Campbell, a Booz Allen Hamilton Scientist who previously worked on quantum computing at the Massachusetts Institute of Technology. To communicate with quantum computers, you use electromagnetic signals at one frequency. But to transfer quantum data over fiber-optic lines, you need photons at a different frequency. Transduction is the technology that will convert from one frequency to another.</p>
+
+<p>That means data sent on quantum networks will need to go through two frequency conversions to send data from one machine to another. "It's hard to think of that process ever becoming perfect," Campbell said. But, counters AT&T's Telfer, "Hard doesn't mean impossible. There is nothing fundamental that would keep transduction from occurring." </p>
+
+<h3>Maybe a quantum internet someday</h3>
+<p>You can link quantum computers with plain old classical networks -- indeed, that's how today's early quantum computers are used. But converting communication to the classical realm slows it down and sacrifices the special benefits of entangled quantum data. That's why AT&T's researchers want the quantum links. The ultimate goal of the company's partnership is to build a quantum internet, INQNET leader Pravahan said. Overcoming the challenges of physics and engineering are immense, but success could open up "fundamentally new capabilities in science and technology," in the words of Austrian researchers working on the idea. In a few years or decades, maybe a quantum network will be in your life, precisely synchronizing actions in your online gaming and locking peeping Toms out of your video chats -- or doing something that's just not even conceivable today.</p>
+
+<h1><a href ="https://interestingengineering.com/att-is-full-steam-ahead-with-quantum-internet-research">[Article 2]: AT&T Is Full Steam Ahead with Quantum Internet Research</a></h1>
+
+Telecommunications giant, AT&T are working with researchers on ways to move the power of quantum computing out of the labs and into the real world.The firm has formed a partnership called Intelligent Quantum Networks and Technologies (INQNET).Researchers from the California Institute of Technology, Stanford University, national laboratories, startups, the military, and other institutions will work together on the project.Quantum computing isn’t going to go mainstream anytime soon but the researchers from the partnership will work together on figuring out what is possible.
+
+<h3>Linked computers open doors to super powerful Internet</h3>
+
+<p>They will look into possibly linking quantum computers to amplify their power in a similar way that linking conventional computers led to massive supercomputers. Quantum computers might be able to do something similar which could eventually form the basis for a quantum Internet "How do you get it to a point where you can scale it so you can afford to buy one of these things?" said AT&T Chief Technology Officer Andre Fuetsch, at an event to launch the partnership at the company's research and development lab that's headquarters. "We want to make sure we're there and we're relevant."</p>
+
+<h3>Data sharing in secret</h3>
+<p>The fundamental element of quantum computing is known as a Qubit or Quantum Bit or Qbit for short. It can send more data than a conventional computer which uses a bit. Qubits can store multiple states at the same time. A quantum computer network would link qubits across multiple quantum computers. "You could allow qubits to interact with each other as if they were next to each other," said Soren Telfer, director of the AT&T Foundry in Palo Alto. One major advantage of a quantum computing network is secure communications. With quantum networks, it is impossible for an outside party to eavesdrop so super secure communications can take place with confidence. Another big advantage of a quantum networked computer is "secure multiparty computation”.</p>
+<p>This allows parties to share proprietary data for combined calculations without having to share secrets. Many countries are investing in quantum cryptography to build secure communication systems. Japan has set aside funding to do so and China is already up and running with its own network. These complex systems apply the properties of quantum mechanics to a communication system. The proposed Japanese system would work when an orbiting satellite receives instructions to deliver a set of keys to both the communication sender and the receiver. The sender uses this key to encrypt its data and the receiver uses their key to decode the data. These keys are sent via a powerful laser beam of light particles (photons). Each key is only viable for single use.<p>
+<p>In addition to this secure key generation, the system can detect any attempts to intercept the communication sending alerts to its administrators and changing the information being sent.</p>
+
+</div>
+</body>
+</html>

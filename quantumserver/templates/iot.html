@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IOT IN QUANTUM</title>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
+
+    <nav class="navbar navbar-inverse">
+        <div class="contianer-fluid ">
+            <!--LOGO-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('intro') }}">Introduction</a>
+  <a href="{{ url_for('net') }}">Networking</a>
+  <a href="{{ url_for('crypto') }}">Cryptography</a>
+  <a href="{{ url_for('teleport') }}">Quantum Teleportation</a>
+  <a href="{{ url_for('ai') }}">AI in Quantum Computing</a>
+  <a href="{{ url_for('compute') }}">Quantum Computers</a>
+  <a href="{{ url_for('iot') }}">Iot with Quantum Computing</a>
+  <a href="{{ url_for('material') }}">Material science in Quantum Computing</a>
+  <a href="{{ url_for('tutorial') }}">Videos and Podcasts</a>
+  <a href="{{ url_for('tools') }}">Tools for Quantum Programming</a>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+<h1>IOT</h1>
+<p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
+<h1><a href="https://www.embedded.com/electronics-blogs/say-what-/4462006/Exploring-the-intersection-of-IoT--AI-and-quantum-computing">[Article 1]: Exploring the intersection of IoT, AI and quantum computing</a></h1>
+
+<p>LAS VEGAS — Where do IoT, AI and Quantum Computing intersect? The short answer is that they meet where data is growing exponentially. The long answer is... well, it’s complicated.
+Last week, a panel at the Design Automation Conference (DAC) drilled deep into this difficult topic. Participating were the winners of the “2019 Under 40 Innovation Awards” — young engineers and researchers working on next-generation technologies.
+The panelists, all eager for the dawn of a new era in design automation, called upon the electronic design automation (EDA) industry for more sophisticated tools to help them advance the Internet of things (IoT), artificial intelligence (AI) and even quantum computing.
+But given the slowdown of Moore’s Law, what more can design automation contribute to electronic design? How exactly does EDA connect with AI?
+Vijay Raghunathan, professor of electrical and computer engineering at Purdue University, explained: “One of the things EDA did for designs in general is to convert what was basically dark art [i.e. electronic design] into a very structured science.”
+Raghunathan continued: “If you talk to AI researchers today, you realize the design of these algorithms and neural networks is really a dark art. One of the most interesting things going forward is to see if EDA can bring the same level of rigorous structure to the design of neural networks and design of AI algorithms.” He added, “To me, that is one of the most interesting aspects that connects the world of EDA with the world of AI.”</p>
+2019 Under 40 Innovation Awards Panel at DAC
+
+<p>From left to right: Huichu Liu, a staff research scientist at Intel; Vijay Raghunathan, professor at Purdue Univ.; Robert Wille, professor at Johannes Kepler Univ.; Rasit Onur Topaloglu, senior hardware developer and program manager at IBM
+New-generation researchers also expect EDA tool vendors to jump into quantum computing — not in a few years, but today.
+Robert Wille, a professor at Johannes Kepler University in Linz, Austria, said, “Everybody knows about Moore’s Law and design gaps we’ve experienced in decades with conventional computing technology.” Despite the widespread belief that the era of quantum computing is still far away, Wille stressed: “It makes absolutely sense for the design automation industry to start developing efficient and sophisticated EDA tools for Quantum Computing -- right now.”
+<h3>What is quantum computing for? </h3>
+The panel, consisting of winners of this year’s Under-40 Innovation Awards, included Huichu Liu, a staff research scientist at Intel, Rasit Onur Topaloglu, senior hardware developer and program manager at IBM, Wille, and Raghunathan.
+Yunji Chen, professor at the Institute of Computing Technology, Chinese Academy of Sciences, was another honoree, but couldn’t participate because he was not able to get a U.S. visa in time.
+Given their diverse backgrounds, the panel covered a lot of ground, touched on diverse topics that ranged from IoT to AI and quantum computing.
+For a layman, quantum computing is a mystery beyond solution. Asked why the world needs quantum computing, Wille said, “First, it’s important to understand that the quantum computer is not replacing the conventional computer we know.”
+Instead, he said, it will be one of the many computing technologies of the future. The tech world has high hopes for quantum computers, which show promises, for example, in accelerating the exploitation of huge search bases.</p>
+
+Robert Wille
+<p>“But the first killer app for quantum computing is what’s known as Shor’s algorithm — a quantum algorithm — developed years ago,” Wille explained. “The algorithm will help make factorization much more efficient. This is still considered as the holy grail of quantum computing, as [many believe] this will change the entire world [in theory].” But in reality, “This is still the furthest away.”
+In recent years, as big industry players such as IBM, Google and Microsoft Research jump into the fray, the quantum computing community is seeing the emergence of new commercial applications. For example, quantum computers can be used “for simulating climate change, solving optimization problems … or… quantum chemistry is a huge topic,” said Wille.
+So, although the quantum computer’s big goal of factorization is still far away, “We see today a variety of applications where [the use of] quantum computer may be beneficial,” said Wille.</p>
+
+Vijay Raghunathan
+<p>As promising as this prospect might sound, Purdue’s Raghunathan cautioned that there are big challenges in quantum computing. “From an outsider’s perspective, I see there is a class of very hard problems — computationally hard problems — where quantum computing holds a lot of promise.” Solving optimization problems is one, by computing in the exponential space, for example, Raghunathan. “But the challenge is, how do you really extract true benefits [of quantum computing] for a class of really wide-spread hard computational problems which seem to be all over the place?”</p>
+<h3>Infrastructure for quantum computing</h3>
+<p>Obviously, none of the young innovators expects the EDA industry to stand still. By stressing the need for automation tools for quantum computers, Wille said, “We need them to find out what’s possible to fabricate and what’s possible to design.” He said, “We need to be prepared for the day when quantum computing becomes scalable.”
+IBM’s Rasit Onur Topaloglu, another young innovation award winner, noted, “We also thought about this problem at IBM…we asked, when do we need automation tools to design quantum computing?”</p>
+
+Rasit Onur Topaloglu
+<p>He said, “We’ve concluded that up until 200 qubits, maybe we can still do it manually.” He added, “I am not going to project when we will reach 200 qubits, but we already have an 80 qubits architecture.” Although there is at least a seven year-gap from academic research to a product, he concluded that the research for design automation tools for quantum computing needs to start today. “When the idea [of quantum computing] takes off, we need those tools in the industry right away.”</p>
+<h3>LINKS</h3>
+<ul>
+  <li><a href="https://www.embedded.com/electronics-blogs/say-what-/4462006/Exploring-the-intersection-of-IoT--AI-and-quantum-computing">https://www.embedded.com/electronics-blogs/say-what-/4462006/Exploring-the-intersection-of-IoT--AI-and-quantum-computing</a></li>
+</ul>
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TOOLS</title>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+/>
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <nav class="navbar navbar-inverse">
+        <div class="contianer-fluid ">
+            <!--LOGO-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="{{ url_for('intro') }}">Introduction</a>
+  <a href="{{ url_for('net') }}">Networking</a>
+  <a href="{{ url_for('crypto') }}">Cryptography</a>
+  <a href="{{ url_for('teleport') }}">Quantum Teleportation</a>
+  <a href="{{ url_for('ai') }}">AI in Quantum Computing</a>
+  <a href="{{ url_for('compute') }}">Quantum Computers</a>
+  <a href="{{ url_for('iot') }}">Iot with Quantum Computing</a>
+  <a href="{{ url_for('material') }}">Material science in Quantum Computing</a>
+  <a href="{{ url_for('tutorial') }}">Videos and Podcasts</a>
+  <a href="{{ url_for('tools') }}">Tools for Quantum Programming</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+
+<h1>TOOLS</h1>
+
+<p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
+
+<h3> MICROSOFT QUANTUM TOOLS </h3>
+<p> Microsoft Quantum Development Kit <a href="https://docs.microsoft.com/en-us/quantum/?view=qsharp-preview"> Link </a> </p>
+<p> Writing a Quantum Program <a href="https://docs.microsoft.com/en-us/quantum/quickstart?view=qsharp-preview&tabs=tabid-vscode"> Link</a></p>
+
+<ul>
+<li><a href="https://cloudblogs.microsoft.com/quantum/2018/06/06/the-microsoft-approach-to-quantum-computing/">https://cloudblogs.microsoft.com/quantum/2018/06/06/the-microsoft-approach-to-quantum-computing/</a></li>
+<li><a href="https://www.microsoft.com/en-sg/quantum/development-kit">https://www.microsoft.com/en-sg/quantum/development-kit</a></li>
+</ul>
+
+
+<h3> GOOGLE&apos;S QUANTUM LIBRARIES </h3>
+
+<pre><code class="python">
+import cirq
+
+# Pick a qubit.
+qubit = cirq.GridQubit(0, 0)
+
+# Create a circuit
+circuit = cirq.Circuit.from_ops(
+    cirq.X(qubit)**0.5,  # Square root of NOT.
+    cirq.measure(qubit, key='m')  # Measurement.
+)
+print("Circuit:")
+print(circuit)
+
+# Simulate the circuit several times.
+simulator = cirq.Simulator()
+result = simulator.run(circuit, repetitions=20)
+print("Results:")
+print(result)
+</code>
+</pre>
+
+
+</div>
+</body>
+</html>

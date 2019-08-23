@@ -30,7 +30,7 @@ def register():
     return render_template('register.html', title='Register', form=form)
 
 
-
+@app.route("/", methods=['GET','POST'])
 @app.route("/login", methods=['GET','POST'])
 def login():
     db.create_all()
@@ -90,7 +90,7 @@ def iot():
 def crypto():
     return render_template('crypto.html')
 
-@app.route("/")
+#@app.route("/")
 @app.route("/intro")
 def intro():
     return render_template("intro.html")

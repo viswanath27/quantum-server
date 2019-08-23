@@ -56,6 +56,10 @@ body {
 }
 </style>
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -116,319 +120,33 @@ function closeNav() {
 <h1>CYRPTOGRAPGY</h1>
 <p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
 
-<h1><a href="https://cointelegraph.com/news/quantum-computing-vs-blockchain-impact-on-cryptography/amp">[Article 1]: Quantum Computing Vs. Block-chain: Impact on Cryptography</a></h1>
-<p>The major selling point of block-chain and its applications is that cryptographically secured distributed ledgers are virtually “unbreakable” under normal circumstances, given the current state of computational technology. Its validity, however, is heavily dependent on the “state of technology” assumption. Should a paradigmatic shift in computing occur, contemporary block-chain-based systems may become vulnerable to threats not accounted for in their design? But how urgent is the threat of this happening any time soon?</p>
-
-<p>The strides that physicists have been making for the last three decades toward building an operational quantum computer could soon contribute to such a shift. As the milestone called “quantum supremacy,” in which a quantum computer outperforms a traditional computer on a  specific task, could be reached any day now, the question of whether prospective quantum-based devices are capable of “killing” block-chain comes into the spotlight.</p>
 
 
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://cointelegraph.com/news/quantum-computing-vs-blockchain-impact-on-cryptography/amp">[ARTICLE 1]: Quantum Computing Vs. Block-chain: Impact on Cryptography</a></h3>
+<p>
+
+Blockchain vulnerabilities due to advent of the quantum computing is dicussed in this article. Example of <a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm">Shor&apos;s algorithm</a> is quoted of how it can replace the present cryptography algorithms. Blockchain heavliy depends on the one sided fucntion, which are difficult to reverse, for its ledger validation. If a quantum computer gets into improper hands all sorts of compromise can happen to Block chain transactions. Thought have to be initiated to adapt quantum computer resistant algorithms in Block chain technology. Also may, Quantum internet can bring new changes of how Block chain is operating today which will leverage Quantum Entanglement, there are few studies also in this direction<a href="https://arxiv.org/pdf/1804.05979.pdf">Link</a>. Estimate is roughly in 10 years from now quantum era would start and cryptography should evolve with Quantum resistant algorithms.  </p></div><br><br>
 
 
-<h3>Quantum computers and block-chain</h3>
-<p>Acknowledging all the conventional reservations, the idea of block-chains’ immutability and unmatched security is widely accepted: It underlies the public’s trust in digital assets and promotes mass adoption. However, the advent of quantum computing could potentially jeopardize the integrity of public-key cryptography, which is the backbone of block-chain security. While the range of quantum computers’ potential applications is vast, the one most relevant in the context of block-chain technology and cryptography more generally is the capacity to run specific algorithms much faster than any existing supercomputer. </p>
-
-<p>One of the most widely discussed presumed use cases is running the famous Shor’s algorithm for factor decomposition, which could potentially render many contemporary encryption techniques obsolete. As a group of researchers from the Russian Quantum Center observed in an article for the journal Nature, one potential risk stems from the fact that block-chain security heavily relies on one-way  mathematical functions — the ones that are easy to run, yet much more di􀃞cult to calculate in reverse. Such functions are used to both generate digital signatures and validate transactions on the ledger.</p>
-
-<p>A criminal equipped with a functional quantum device would be able to perform reverse calculations immensely faster, which would enable them to forge signatures, impersonate other users and gain access to their digital assets. In the context of mining, such a malicious actor could take over the process of updating the ledger, manipulate transaction history and double-spend coins. temperature fluctuations, noises and electromagnetic waves. Current quantum computers</p>
-
-
-
-<p>The Russian researchers suggested that the architects of encrypted systems should start taking precautions against this threat immediately. One solution could be replacing conventional digital signatures with quantum-resistant cryptography — the kind of security algorithms  peci􀃕cally designed to withstand an attack from a su􀃞ciently powerful quantum computer. Another remedy, the Russian physicists proposed, will only be available with the advent of a quantum internet, which is still several decades away. This prospective wireless communication architecture, based on the connection between remote entangled quantum particles, will unlock a wealth of new blockchain models and designs. This is somewhat consonant with the mind-bending idea that Del Rajan and Matt Visser from the Victoria University in New Zealand expressed in a recent research paper. They proposed to forgo the use of quantum cryptography and leap straight to making blockchain a quantum-based system itself. Their model describes a blockchain based on qubits entangled not just in space, but also in time. The attempt to retrospectively alter the record of transactions, encoded by the history of a single particle’s states over time, would be impossible without destroying the particle altogether. The realization of this model, however, would be impossible until a quantum internet is up and running. </p>
-
-
-<h3>Practitioners weigh in</h3>
-<p>While the futuristic solutions that academics propose may be decades away, a lot of handson research and development in quantum computing and quantum cryptography is happening right now. The experts working with quantum computing applications surveyed by Cointelegraph differed in their views on how immediate the quantum threat is. Yaniv Altshuler, an MIT researcher and CEO and co-founder of predictive analytics platform Endor Protocol, said: “Quantum computers are becoming incredibly powerful, and they are advancing faster than most people expected. However, their capabilities will not break the blockchain. Each year, when new hardware is released, it rekindles concerns about the blockchain’s integrity, but there is no evidence that quantum computing can compromise the blockchain.” Stewart Allen, the chief operating officer at quantum computing firm IonQ, believes that, by the time a quantum computer grows to become sufficiently powerful to imperil the integrity of today’s blockchains, security systems will have moved to algorithms capable of containing them:</p>
-
-<p>“There is no real threat of quantum computers breaking blockchain cryptography in the short-term. If and when this does happen, cryptography will have moved to more quantumproof algorithms. We're at least a decade from quantum computers being able to break blockchain cryptography.” </p>
-<p>Others, however, did not quite share this optimistic view.  ILCoin's executive manager, Norbert Go􀃠a, expressed his concern over the potential emergence of quantum-powered mining pools:
-“If somebody has a quantum based mining pool, it’s easy to dominate others. [...]Today we do not have any quantum-based mining machines. On the other hand, a lot of companies have been working on quantum-based computing technology. We believe that in the next _ve years it could be real. Maybe less, who knows?”</p>
-
-<p>Rakesh Ramachandran, CEO and co-founder of QBRICS Inc, emphasized that quantum computing is poised to have an e􀃠ect in virtually every sphere in which cryptography is used. In the case of blockchain technology, he said, we might expect a systemic shift: “Quantum  computers will be rede_ning cryptography of not only blockchain but wherever there is an application of cryptography including simple things like an online banking website. There is a considerable research and work being done to mitigate the effects and move to quantum-resistant cryptography or post-quantum cryptography. “However, the challenge of blockchain is not just about the threat that quantum computing represents but scope of how blockchain will migrate to the new version of c </p>
-
-<p>All experts provided surprisingly similar estimates of how much time we have before quantum computers can pose a threat to blockchains’ integrity, varying within a range from five to 10 years. They were also fairly consistent in their recipes for dealing with potential sssss cryptography will be necessary, as well as building infrastructure that will support it. Blockchains will have to evolve, but it is unlikely that quantum computing technology will fundamentally threaten their existence.”</p>
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://www.engadget.com/2019/06/21/cloudflare-quantum-encryption/">[ARTICLE 2]: Cloud Fare wants to protect internet from Quantum Computing</a></h3>
+<p>
+Quantum computing has the capacity to change all the domains of how they operate today. With the advances in quantum computing and its access it can easily break into sensitve data. Cloud fare is working to test the post quantum cryptography technology. There is an open source software package <a href="https://github.com/cloudflare/circl">CIRCL</a> or also called as "Cloudflare Interoperable Reusable Cryptographic Library". Cloud is trying to imporve upon the SSL which is the basis for client server authentication. By openly making this library available, Cloud fare sees collaborative effort to address the cryptography problem.</p></div><br><br>
 
 
 
 
-<h1><a href="https://www.wired.com/story/quantum-computers-could-be-true-randomness-generators/">[Article 2]: Cloudflare wants to protect the internet from quantum computing</a></h1>
-
-<img src="{{url_for('static', filename='crypt2.png')}}" alt=""><br>
-
-
-
-<p>Quantum computing has the potential to revolutionize health care, AI, financial modeling, weather simulation and more. It's also going to shake up encryption as we know it. Without advances in post-quantum cryptography, quantum computing could make it easy for hackers to access sensitive data, like credit card info. To prevent that, internet infrastructure company Cloudflare is testing post-quantum cryptography technology, and it's sharing its open-source software package, CIRCL, or Cloudflare Interoperable Reusable Cryptographic Library, on GitHub.</p>
-
- <a href="https://github.com/cloudflare/circl">https://github.com/cloudflare/circl</a> 
-
-<p>While Cloudflare hasn't solved the problems that cryptography raises for encryption, it's been trying to "quantum-proof" TLS, the encryption technology formerly called SSL, which protects connections between web browsers and servers. Cloudflare plans to continue this work, and it hopes that by sharing CIRCL, it will help other researchers prepare for a post-quantum world. In a blog post, the company wrote, "we are trying to improve and propose standards to help make the internet a better place."</p>
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://blog.cloudflare.com/towards-post-quantum-cryptography-in-tls/amp/">[ARTICLE 3]: QUANTUM COMPUTERS COULD BE TRUE RANDOMNESS GENERATORS</a></h3>
+<p>"Quantum Supremacy" is possible to be achieved faster than it is thought. Google's quantum computing is towards the goal of "Generating pure random numbers" which can be majore application of Quantum computers. Superposition which is random probability of state of given qbit at any time can form the basis for this randomness. Sampling this state is the algorithm proposed where at any given point of time the output is underterministic. As the qbits in this case increase, the output random state will be hard to predict. There can be a probability distribution in which dictates the quantum bits can output sting. The entropy of this 50 bit string will be unpredictable. In combination with classical and quantum computer there can be purely random (entropy which no calssical computer can generate) and feed this number to classical algorithm (Aaronson's Protocol). Reference of Trapdoor claw-free function is made here to really verify the randomness of the number generated, which other wise is very difficult for super computer also to do so.  </p></div><br><br>
 
 
-<h1><a href="https://www.wired.com/story/quantum-computers-could-be-true-randomness-generators/">[Article 3]: QUANTUM COMPUTERS COULD BE TRUE RANDOMNESS GENERATORS</a></h1>
-<p>SAY THE WORDS “quantum supremacy” at a gathering of computer scientists, and eyes will likely roll. The phrase refers to the idea that quantum computers will soon cross a threshold where they’ll perform with relative ease tasks that are extremely hard for classical computers. Until recently, these tasks were thought to have little real-world use, hence the eye rolls. But now that Google’s quantum processor is rumored to be close to reaching this goal, imminent quantum supremacy may turn out to have an important application after all: generating pure randomness.
-Randomness is crucial for almost everything we do with our computational and communications infrastructure. In particular, it’s used to encrypt data, protecting everything from mundane conversations to financial transactions to state secrets.</p>
-<p>Genuine, verifiable randomness—think of it as the property possessed by a sequence of numbers that makes it impossible to predict the next number in the sequence—is extremely hard to come by.
-That could change once quantum computers demonstrate their superiority. Those first tasks, initially intended to simply show off the technology’s prowess, could also produce true, certified randomness. “We are really excited about it,” said John Martinis, a physicist at the University of California, Santa Barbara, who heads Google’s quantum computing efforts. “We are hoping that this is the first application of a quantum computer.”</p>
-<h2>Randomness and Entropy</h2>
-<p>Randomness and quantum theory go together like thunder and lightning. In both cases, the former is an unavoidable consequence of the latter. In the quantum world, systems are often said to be in a combination of states—in a so-called “superposition.” When you measure the system, it will “collapse” into just one of those states. And while quantum theory allows you to calculate probabilities for what you’ll find when you do your measurement, the particular result is always fundamentally random.</p>
-<p>Physicists have been exploiting this connection to create random-number generators. These all rely on measurements of some kind of quantum superposition. And while these systems are more than sufficient for most people’s randomness needs, they can be hard to work with. In addition, it’s extremely difficult to prove to a skeptic that these random-number generators really are random. And finally, some of the most effective methods for generating verifiable randomness require finicky setups with multiple devices separated by great distances.</p>
-
-<img src="{{url_for('static', filename='crypt3.png')}}" alt=""><br>
-
-
-<h3>The Google AI lab introduced a 72-qubit quantum processor called Bristlecone in 2018.</h3>
-<h3>GOOGLE</h3>
-<p>One recent proposal for how to pull randomness out of a single device—a quantum computer—exploits a so-called sampling task, which will be among the first tests of quantum supremacy. To understand the task, imagine you are given a box filled with tiles. Each tile has a few 1s and 0s etched onto it—000, 010, 101 and so on.
-If there are just three bits, there are eight possible options. But there can be multiple copies of each labeled tile in the box. There might be 50 tiles labeled 010 and 25 labeled 001. This distribution of tiles determines the likelihood that you’ll randomly pull out a certain tile. In this case, you’re twice as likely to pull out a tile labeled 010 as you are to pull out a tile labeled 001.</p>
-<p>A sampling task involves a computer algorithm that does the equivalent of reaching into a box with a certain distribution of tiles and randomly extracting one of them. The higher the probability specified for any tile in the distribution, the more likely it is that the algorithm will output that tile.
-Of course, an algorithm isn’t going to reach into a literal bag and pull out tiles. Instead, it will randomly output a binary number that’s, say, 50 bits long, after being given a distribution that specifies the desired probability for each possible 50-bit output string.</p>
-<p>For a classical computer, the task becomes exponentially harder as the number of bits in the string gets larger. But for a quantum computer, the task is expected to remain relatively straightforward, whether it involves five bits or 50.The quantum computer starts with all its quantum bits—qubits—in a certain state. Let’s say they all start at 0. Just as classical computers act on classical bits using so-called logic gates, quantum computers manipulate qubits using the quantum equivalent, known as quantum gates.
-But quantum gates can put qubits into strange states. For example, one kind of gate can put a qubit that starts with an initial value 0 into a superposition of 0 and 1. If you were to then measure the state of the qubit, it would collapse randomly into either 0 or 1 with equal probability.</p>
-<p>Even more bizarrely, quantum gates that act on two or more qubits at once can cause the qubits to become “entangled” with each other. In this case, the states of the qubits become intertwined, so that the qubits can now only be described using a single quantum state.If you put a bunch of quantum gates together, then have them act on a set of qubits in some specified sequence, you’ve created a quantum circuit. In our case, to randomly output a 50-bit string, you can build a quantum circuit that puts 50 qubits, taken together, into a superposition of states that captures the distribution you’d like to re-create.When the qubits are measured, the entire superposition will collapse randomly to one 50-bit string. The probability that it’ll collapse to any given string is dictated by the distribution that is specified by the quantum circuit. Measuring the qubits is akin to reaching blindfolded into the box and randomly sampling one string from the distribution.</p>
-
-<p>Scott Aaronson, a computer scientist at the University of Texas, Austin, says that random number generation will probably be “the first application of quantum computers that will be technologically feasible to implement.”
-COMPUTER SCIENCE DEPARTMENT, UNIVERSITY OF TEXAS AT AUSTIN
-How does this get us to random numbers? Crucially, the 50-bit string sampled by the quantum computer will have a lot of entropy, a measure of disorder or unpredictability, and hence randomness. “This might actually be kind of a big deal,” said Scott Aaronson, a computer scientist at the University of Texas, Austin, who came up with the new protocol. “Not because it’s the most important application of quantum computers—I think it’s far from that—rather, because it looks like probably the first application of quantum computers that will be technologically feasible to implement.”
-Aaronson’s protocol to generate randomness is fairly straightforward. A classical computer first gathers a few bits of randomness from some trusted source and uses this “seed randomness” to generate the description of a quantum circuit. The random bits determine the types of quantum gates and the sequence in which they should act on the qubits. The classical computer sends the description to the quantum computer, which implements the quantum circuit, measures the qubits, and sends back the 50-bit output bit string. In doing so, it has randomly sampled from the distribution specified by the circuit.
-Now repeat the process over and over—for example, 10 times for each quantum circuit. The classical computer uses statistical tests to ensure that the output strings have a lot of entropy. Aaronson has shown, partly in work published with Lijie Chen and partly in work yet to be published, that under certain plausible assumptions that such problems are computationally hard, no classical computer can generate such entropy in anywhere near the time it would take a quantum computer to randomly sample from a distribution. After the checks, the classical computer pastes together all the 50-bit output strings and feeds it all to a well-known classical algorithm. “It produces a long string that is nearly perfectly random,” Aaronson said.</p>
-<h3>The Quantum Trapdoor</h3>
-<p>Aaronson’s protocol is best suited for quantum computers with about 50 to 100 qubits. As the number of qubits in a quantum computer passes this threshold, it becomes computationally intractable for even classical supercomputers to use the protocol. This is where another scheme for generating verifiable randomness using quantum computers enters the picture. It uses an existing mathematical technique with a forbidding name: a trapdoor claw-free function. “It sounds much worse than it is,” said Umesh Vazirani, a computer scientist at the University of California, Berkeley, who devised the new strategy along with Zvika Brakerski, Paul Christiano, Urmila Mahadev and Thomas Vidick.
-Imagine a box again. Instead of reaching in and extracting a string, this time you drop in an n-bit string, call it x, and out pops another n-bit string. The box is somehow mapping an input string to an output string. But the box has a special property: For every x, there is another input string y that generates the same output string.</p>
-<p>In other words, there exist two unique input strings—x and y—for which the box returns the same output string, z. This triplet of x, y and z is called a claw. The box, in computer science speak, is a function. The function is easy to compute, meaning that given x or y, it’s easy to calculate z. But if you are only given x and z, finding y—and hence the claw—is impossible, even for a quantum computer.</p>
-
-<p>Urmila Mahadev, Umesh Vazirani and Thomas Vidick (from left) developed a random number generator by linking cryptography with quantum information processing.
-JANA ASENBRENNEROVA/QUANTA MAGAZINE; SIMONS INSTITUTE FOR THE THEORY OF COMPUTING; COURTESY OF CALTECH
-The only way you could get at the claw is if you had some inside information, the so-called trapdoor.
-Vazirani and his colleagues want to use such functions not only to get quantum computers to generate randomness, but to verify that the quantum computer is behaving, well, quantum mechanically—which is essential to trusting the randomness.</p>
-<p>The protocol starts with a quantum computer that puts n qubits into a superposition of all n-bit strings. Then a classical computer sends over a description of a quantum circuit specifying the function to be applied to the superposition—a trapdoor claw-free function. The quantum computer implements the circuit, but without knowing anything about the trapdoor.
-At this stage, the quantum computer enters a state in which one set of its qubits is in a superposition of all n-bit strings, while another set holds the result of applying the function to this superposition. The two sets of qubits are entangled with each other.</p>
-<p>The quantum computer then measures the second set of qubits, randomly collapsing the superposition into some output z. The first set of qubits, however, collapses into an equal superposition of two n-bit strings, x and y, because either could have served as input to the function that led to z.
-The classical computer receives the output z, then does one of two things. Most of the time, it asks the quantum computer to measure its remaining qubits. This will collapse the superposition, with a 50-50 chance, into either x or y. That’s equivalent to getting a 0 or a 1, randomly.</p>
-<p>Occasionally, to check on the quantum computer’s quantumness, the classical computer asks for a special measurement. The measurement and its outcome are designed so that the classical computer, with the help of the trapdoor that only it has access to, can ensure that the device answering its queries is indeed quantum. Vazirani and colleagues have shown that if the device gives the correct answer to the special measurement without using collapsing qubits, that’s equivalent to figuring out the claw without using the trapdoor. This, of course, is impossible. So there must be at least one qubit collapsing inside the device (providing, randomly, a 0 or a 1). “[The protocol] is creating a tamper-proof qubit inside an untrusted quantum computer,” Vazirani said.</p>
-<p>This scheme might be faster than Aaronson’s quantum sampling protocol, but it has a distinct disadvantage. “It’s not going to be practical with 50 or 70 qubits,” Aaronson said.
-Aaronson, for now, is waiting for Google’s system. “Whether the thing they are going to roll out is going to be actually good enough to achieve quantum supremacy is a big question,” he said.
-If it is, then verifiable quantum randomness from a single quantum device is around the corner. “We think it’s useful and a potential market, and that’s something we want to think about offering to people,” Martinis said.
-Original story reprinted with permission from Quanta Magazine, an editorially independent publication of the Simons Foundation whose mission is to enhance public understanding of science by covering research developments and trends in mathematics and the physical and life sciences.</p>
-
-<h1> <a href="https://new.blog.cloudflare.com/towards-post-quantum-cryptography-in-tls/amp/">[Article 4]:Towards Post-Quantum Cryptography in TLS</a></h1>
-
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3> <a href="https://new.blog.cloudflare.com/towards-post-quantum-cryptography-in-tls/amp/">[ARTICLE 4]:Towards Post-Quantum Cryptography in TLS</a></h3>
 <p>We live in a completely connected society. A society connected by a variety of devices: laptops, mobile phones, wearables, self-driving or self-flying things. We have standards for a common language that allows these devices to communicate with each other. This is critical for wide-scale deployment – especially in cryptography where the smallest detail has great importance.
-One of the most important standards-setting organizations is the National Institute of Standards and Technology (NIST), which is hugely influential in determining which standardized cryptographic systems see worldwide adoption. At the end of 2016, NIST announced it would hold a multi-year open project with the goal of standardizing new post-quantum (PQ) cryptographic algorithms secure against both quantum and classical computers.
-Many of our devices have very different requirements and capabilities, so it may not be possible to select a “one-size-fits-all” algorithm during the process. NIST mathematician, Dustin Moody, indicated that institute will likely select more than one algorithm:</p>
+One of the most important standards-setting organizations is the National Institute of Standards and Technology (NIST), which is hugely influential in determining which standardized cryptographic systems see worldwide adoption. At the end of 2016, NIST announced it would hold a multi-year open project with the goal of standardizing new post-quantum (PQ) cryptographic algorithms secure against both quantum and classical computers.Many of our devices have very different requirements and capabilities, so it may not be possible to select a “one-size-fits-all” algorithm during the process. NIST mathematician, Dustin Moody, indicated that institute will likely select more than one algorithm:</p> </div><br><br>
 
-<p>“There are several systems in use that could be broken by a quantum computer - public-key encryption and digital signatures, to take two examples - and we will need different solutions for each of those systems.”</p>
-<p>Initially, NIST selected 82 candidates for further consideration from all submitted algorithms. At the beginning of 2019, this process entered its second stage. Today, there are 26 algorithms still in contention.</p>
-<h3>Post-quantum cryptography: what is it really and why do I need it?</h3>
-<p>In 1994, Peter Shor made a significant discovery in quantum computation. He found an algorithm for integer factorization and computing discrete logarithms, both believed to be hard to solve in classical settings. Since then it has become clear that the 'hard problems' on which cryptosystems like RSA and elliptic curve cryptography (ECC) rely – integer factoring and computing discrete logarithms, respectively – are efficiently solvable with quantum computing.
-A quantum computer can help to solve some of the problems that are intractable on a classical computer. In theory, they could efficiently solve some fundamental problems in mathematics. This amazing computing power would be highly beneficial, which is why companies are actually trying to build quantum computers. At first, Shor’s algorithm was merely a theoretical result – quantum computers powerful enough to execute it did not exist – but this is quickly changing. In March 2018, Google announced a 72-qubit universal quantum computer. While this is not enough to break say RSA-2048 (<a href="https://arxiv.org/pdf/1905.09749.pdf">still more is needed</a>), many fundamental problems have already been solved.</p>
-<p>In anticipation of wide-spread quantum computing, we must start the transition from classical public-key cryptography primitives to post-quantum (PQ) alternatives. It may be that consumers will never get to hold a quantum computer, but a few powerful attackers who will get one can still pose a serious threat. Moreover, under the assumption that current TLS handshakes and ciphertexts are being captured and stored, a future attacker could crack these stored individual session keys and use those results to decrypt the corresponding individual ciphertexts. Even strong security guarantees, like forward secrecy, do not help out much there.
-In 2006, the academic research community launched a conference series dedicated to finding alternatives to RSA and ECC. This so-called post-quantum cryptography should run efficiently on a classical computer, but it should also be secure against attacks performed by a quantum computer. As a research field, it has grown substantially in popularity.
-Several companies, including Google, Microsoft, Digicert and Thales, are already testing the impact of deploying PQ cryptography. Cloudflare is involved in some of this, but we want to be a company that leads in this direction. The first thing we need to do is understand the real costs of deploying PQ cryptography, and that’s not obvious at all.
-<h3>What options do we have?</h3>
-<p>Many submissions to the NIST project are still under study. Some are very new and little understood; others are more mature and already standardized as RFCs. Some have been broken or withdrawn from the process; others are more conservative or illustrate how far classical cryptography would need to be pushed so that a quantum computer could not crack it within a reasonable cost. Some are very slow and big; others are not. But most cryptographic schemes can be categorized into these families: 
-<ul>
-<li><a href-"https://web.eecs.umich.edu/~cpeikert/pubs/lattice-survey.pdf">lattice-based</a></li>
-<li><a href="http://www.cryptosystem.net/hfe.pdf"> multivariate</a></li>
-<li><a href="https://link.springer.com/content/pdf/10.1007%2F0-387-34805-0_21.pdf">hash-based(signatures only)</a></li>
-<li><a href="https://ipnpr.jpl.nasa.gov/progress_report2/42-44/44N.PDF">code-based</a></li>
-<li><a href="https://eprint.iacr.org/2011/506.pdf">isogeny-based.</a></li>
-</ul>
-For some algorithms, nevertheless, there is a fear they may be too inconvenient to use with today’s Internet. We must also be able to integrate new cryptographic schemes with existing protocols, such as SSH or TLS. To do that, designers of PQ cryptosystems must consider these characteristics:
-<ul>
-  <li>Latency caused by encryption and decryption on both ends of the communication channel, assuming a variety of devices from big and fast servers to slow and memory constrained IoT (Internet of Things) devices</li>
-  <li>Small public keys and signatures to minimize bandwidth</li>
-  <li>Clear design that allows cryptanalysis and determining weaknesses that could be exploited</li>
-  <li>Use of existing hardware for fast implementation</li>
-</ul>
-The work on post-quantum public key cryptosystems must be done in a full view of organizations, governments, cryptographers, and the public. Emerging ideas must be properly vetted by this community to ensure widespread support.</p>
-<h3>Helping Build a Better Internet</h3>
-<p>To better understand the post-quantum world, Cloudflare began experimenting with these algorithms and used them to provide confidentiality in TLS connections.
-With Google, we are proposing a wide-scale experiment that combines client- and server-side data collection to evaluate the performance of key-exchange algorithms on actual users’ devices. We hope that this experiment helps choose an algorithm with the best characteristics for the future of the Internet. With Cloudflare’s highly distributed network of access points and Google’s Chrome browser, both companies are in a very good position to perform this experiment.
-Our goal is to understand how these algorithms act when used by real clients over real networks, particularly candidate algorithms with significant differences in public-key or ciphertext sizes. Our focus is on how different key sizes affect handshake time in the context of Transport Layer Security (TLS) as used on the web over HTTPS.
-Our primary candidates are an NTRU-based construction called HRSS-SXY (by Hülsing - Rijneveld - Schanck - Schwabe, and Tsunekazu Saito - Keita Xagawa - Takashi Yamakawa) and an isogeny-based Supersingular Isogeny Key Encapsulation (SIKE). Details of both algorithms are described in more detail below in section "Dive into post-quantum cryptography". This table shows a few characteristics for both algorithms. Performance timings were obtained by running the BoringSSL speed test on an Intel Skylake CPU.</p>
-KEM
-Public Key size (bytes)
-Ciphertext (bytes)
-Secret size (bytes)
-KeyGen (op/sec)
-Encaps (op/sec)
-Decaps (op/sec)
-NIST level
-HRSS-SXY
-1138
-1138
-32
-3952.3
-76034.7
-21905.8
-1
-SIKE/p434
-330
-346
-16
-367.1
-228.0
-209.3
-1
-<p>Currently the most commonly used key exchange algorithm (according to Cloudflare’s data) is the non-quantum X25519. Its public keys are 32 bytes and BoringSSL can generate 49301.2 key pairs, and is able to perform 19628.6 key agreements every second on my Skylake CPU.
-Note that HRSS-SXY shows a significant speed advantage, while SIKE has a size advantage. In our experiment, we will deploy these two algorithms on both the server side using Cloudflare’s infrastructure, and the client side using Chrome Canary; both sides will collect telemetry information about TLS handshakes using these two PQ algorithms to see how they perform in practice.</p>
-<h3>What do we expect to find?</h3>
-<p>In 2018, Adam Langley conducted an experiment with the goal of evaluating the likely latency impact of a post-quantum key exchange in TLS. Chrome was augmented with the ability to include a dummy, arbitrarily-sized extension in the TLS ClientHello (fixed number of bytes of random noise). After taking into account the performance and key size offered by different types key-exchange schemes, he concluded that constructs based on structured lattices may be most suitable for future use in TLS.</p>
-<p>However, Langley also observed a peculiar phenomenon; client connections measured at 95th percentile had much higher latency than the median. It means that in those cases, isogeny-based systems may be a better choice. In the "Dive into post-quantum cryptography", we describe the difference between isogeny-based SIKE and lattice-based NTRU cryptosystems.
-In our experiment, we want to more thoroughly evaluate and ascribe root causes to these unexpected latency increases. We would particularly like to learn more about the characteristics of those networks: what causes increased latency? how does the performance cost of isogeny-based algorithms impact the TLS handshake? We want to answer key questions, like:</p>
-<ul>
-    <li>What is a good ratio for speed-to-key size (or how much faster could SIKE get to achieve the client-perceived performance of HRSS)?</li>
-    <li>How do network middleboxes behave when clients use new PQ algorithms, and which networks have problematic middleboxes?</li>
-    <li>How do the different properties of client networks affect TLS performance with different PQ key exchanges? Can we identify specific autonomous systems, device configurations, or network configurations that favor one algorithm over another? How is performance affected in the long tail?</li>
-</ul>
-
-<h3>Experiment Design</h3>
-<p>Our experiment will involve both server- and client-side performance statistics collection from real users around the world (all the data is anonymized). Cloudflare is operating the server-side TLS connections. We will enable the CECPQ2 (HRSS + X25519) and CECPQ2b (SIKE + X25519) key-agreement algorithms on all TLS-terminating edge servers.
-In this experiment, the ClientHello will contain a CECPQ2 or CECPQ2b public key (but never both). Additionally, Chrome will always include X25519 for servers that do not support post-quantum key exchange. The post-quantum key exchange will only be negotiated in TLS version 1.3 when both sides support it.</p>
-<p>Since Cloudflare only measures the server side of the connection, it is impossible to determine the time it takes for a ClientHello sent from Chrome to reach Cloudflare’s edge servers; however, we can measure the time it takes for the TLS ServerHello message containing post-quantum key exchange, to reach the client and for the client to respond.</p>
-<p>On the client side, Chrome Canary will operate the TLS connection. Google will enable either CECPQ2 or CECPQ2b in Chrome for the following mix of architecture and OSes:
-	<ul>   
-		<li>x86-64: Windows, Linux, macOS, ChromeOS</li>
-		<li>aarch64: Android</li>
-	</ul>
-</p>
-<p>Our high-level expectation is to get similar results as Langley’s original experiment in 2018 — slightly increased latency for the 50th percentile and higher latency for the 95th. Unfortunately, data collected purely from real users’ connections may not suffice for diagnosing the root causes of why some clients experience excessive slowdown. To this end, we will perform follow-up experiments based on per-client information we collect server-side.
-Our primary hypothesis is that excessive slowdowns, like those Langley observed, are largely due to in-network events, such as middleboxes or bloated/lossy links. As a first-pass analysis, we will investigate whether the slowed-down clients share common network features, like common ASes, common transit networks, common link types, and so on. To determine this, we will run a traceroute from vantage points close to our servers back toward the clients (not overloading any particular links or hosts) and study whether some client locations are subject to slowdowns for all destinations or just for some.</p>
-<h3>Dive into post-quantum cryptography</h3>
-<p>Be warned: the details of PQ cryptography may be quite complicated. In some cases it builds on classical cryptography, and in other cases it is completely different math. It would be rather hard to describe details in a single blog post. Instead, we are giving you an intuition of post-quantum cryptography, rather than provide deep academic-level descriptions. We’re skipping a lot of details for the sake of brevity. Nevertheless, settle in for a bit of an epic journey because we have a lot to cover.</p>
-<h3>Key encapsulation mechanism</h3>
-<p>NIST requires that all key-agreement algorithms have a form of key-encapsulation mechanism (KEM). The KEM is a simplified form of public key encryption (PKE). As PKE, it also allows agreement on a secret, but in a slightly different way. The idea is that the session key is an output of the encryption algorithm, conversely to public key encryption schemes where session key is an input to the algorithm. In a KEM, Alice generates a random key and uses the pre-generated public key from Bob to encrypt (encapsulate) it. This results in a ciphertext sent to Bob. Bob uses his private key to decrypt (decapsulate) the ciphertext and retrieve the random key. The idea was initially introduced by Cramer and Shoup. Experience shows that such constructs are easier to design, analyze, and implement as the scheme is limited to communicating a fixed-size session key. Leonardo Da Vinci said, “Simplicity is the ultimate sophistication,” which is very true in cryptography.</p>
-<p>The key exchange (KEX) protocol, like Diffie-Hellman, is yet a different construct: it allows two parties to agree on a shared secret that can be used as a symmetric encryption key. For example, Alice generates a key pair and sends a public key to Bob. Bob does the same and uses his own key pair with Alice’s public key to generate the shared secret. He then sends his public key to Alice who can now generate the same shared secret. What’s worth noticing is that both Alice and Bob perform exactly the same operations.</p>
-<p>KEM construction can be converted to KEX. Alice performs key generation and sends the public key to Bob. Bob uses it to encapsulate a symmetric session key and sends it back to Alice. Alice decapsulates the ciphertext received from Bob and gets the symmetric key. This is actually what we do in our experiment to make integration with the TLS protocol less complicated.</p>
-<h3>NTRU Lattice-based Encryption  </h3>
-<p>We will enable the CECPQ2 implemented by Adam Langley from Google on our servers. He described this implementation in detail here. This key exchange uses the HRSS algorithm, which is based on the NTRU (N-Th Degree TRUncated Polynomial Ring) algorithm. Foregoing too much detail, I am going to explain how NTRU works and give simplified examples, and finally, compare it to HRSS.</p>
-
-<img src="{{url_for('static', filename='crypt4.png')}}" alt=""><br>
-
-
-<p>NTRU is a cryptosystem based on a polynomial ring. This means that we do not operate on numbers modulo a prime (like in RSA), but on polynomials of degree \( N \) , where the degree of a polynomial is the highest exponent of its variable. For example, \(x^7 + 6x^3 + 11x^2 \) has degree of 7.
-One can add polynomials in the ring in the usual way, by simply adding theirs coefficients modulo some integer. In NTRU this integer is called \( q \). Polynomials can also be multiplied, but remember, you are operating in the ring, therefore the result of a multiplication is always a polynomial of degree less than \(N\). It basically means that exponents of the resulting polynomial are added to modulo \(N\).</p>
-
-<p>In other words, polynomial ring arithmetic is very similar to modular arithmetic,but instead of working with a set of numbers less than N, you are working with a set of polynomials with a degree less than N.
-To instantiate the NTRU cryptosystem, three domain parameters must be chosen:
-<ul>
-    <li>\(N\) - degree of the polynomial ring, in NTRU the principal objects are polynomials of degree \(N-1\).</li>
-    <li>\(p\) - small modulus used during key generation and decryption for reducing message coefficients.</li>
-    <li>\(q\) - large modulus used during algorithm execution for reducing coefficients of the polynomials.</li>
-</ul>
-<p>First, we generate a pair of public and private keys. To do that, two polynomials \(f\) and \(g\) are chosen from the ring in a way that their randomly generated coefficients are much smaller than \(q\). Then key generation computes two inverses of the polynomial: $$ f_p= f^{-1} \bmod{p}   \\  f_q= f^{-1} \bmod{q} $$
-The last step is to compute $$ pk = p\cdot f_q\cdot g \bmod q $$, which we will use as public key pk. The private key consists of \(f\) and \(f_p\). The \(f_q\) is not part of any key, however it must remain secret.
-It might be the case that after choosing \(f\), the inverses modulo \(p\) and \( q \) do not exist. In this case, the algorithm has to start from the beginning and generate another \(f\). That’s unfortunate because calculating the inverse of a polynomial is a costly operation. HRSS brings an improvement to this issue since it ensures that those inverses always exist, making key generation faster than as proposed initially in NTRU.
-The encryption of a message \(m\) proceeds as follows. First, the message \(m\) is converted to a ring element \(pt\) (there exists an algorithm for performing this conversion in both directions). During encryption, NTRU randomly chooses one polynomial \(b\) called blinder. The goal of the blinder is to generate different ciphertexts per encyption. Thus, the ciphetext \(ct\) is obtained as $$ ct = (b\cdot pk + pt ) \bmod q $$ Decryption looks a bit more complicated but it can also be easily understood. Decryption uses both the secret value \(f\) and to recover the plaintext as $$ v =  f \cdot ct \bmod q \\ pt = v \cdot f_p \bmod p $$</p>
-This diagram demonstrates why and how decryption works.
-<img src="{{url_for('static', filename='crypt5.png')}}" alt=""><br>
-
-Step-by-step correctness of decryption procedure.
-After obtaining \(pt\), the message \(m\) is recovered by inverting the conversion function.
-The underlying hard assumption is that given two polynomials: \(f\) and \(g\) whose coefficients are short compared to the modulus \(q\), it is difficult to distinguish \(pk = \frac{f}{g} \) from a random element in the ring. It means that it’s hard to find \(f\) and \(g\) given only public key pk.
-<h3>Lattices</h3>
-NTRU cryptosystem is a grandfather of lattice-based encryption schemes. The idea of using  difficult problems for cryptographic purposes was due to Ajtai. His work evolved into a whole area of research with the goal of creating more practical, lattice-based cryptosystems.
-<h3>What is a lattice and why it can be used for post-quantum crypto?</h3>
-The picture below visualizes lattice as points in a two-dimensional space. A lattice is defined by the origin \(O\) and base vectors \( \{ b_1 , b_2\} \). Every point on the lattice is represented as a linear combination of the base vectors, for example  \(V = -2b_1+b_2\).
-
-<img src="{{url_for('static', filename='crypt6.png')}}" alt=""><br>
-
-
-There are two classical NP-hard problems in lattice-based cryptography:
-    1. Shortest Vector Problem (SVP): Given a lattice, to find the shortest non-zero vector in the lattice. In the graph, the vector \(s\) is the shortest one. The SVP problem is NP-hard only under some assumptions.
-    2. Closest Vector Problem (CVP). Given a lattice and a vector \(V\) (not necessarily in the lattice), to find the closest vector to \(V\). For example, the closest vector to \(t\) is \(z\).
-In the graph above, it is easy for us to solve SVP and CVP by simple inspection. However, the lattices used in cryptography have higher dimensions, say above 1000, as well as highly non-orthogonal basis vectors. On these instances, the problems get extremely hard to solve. It’s even believed future quantum computers will have it tough.
-<h3>NTRU vs HRSS</h3>
-HRSS, which we use in our experiment, is based on NTRU, but a slightly better instantiation. The main improvements are:
-    • Faster key generation algorithm.
-    • NTRU encryption can produce ciphertexts that are impossible to decrypt (true for many lattice-based schemes). But HRSS fixes this problem.
-    • HRSS is a key encapsulation mechanism.
-<h3>CECPQ2b - Isogeny-based Post-Quantum TLS</h3>
-Following CECPQ2, we have integrated into BoringSSL another hybrid key exchange mechanism relying on SIKE. It is called CECPQ2b and we will use it in our experimentation in TLS 1.3. SIKE is a key encapsulation method based on Supersingular Isogeny Diffie-Hellman (SIDH). Read more about SIDH in our previous post. The math behind SIDH is related to elliptic curves. A comparison between SIDH and the classical Elliptic Curve Diffie-Hellman (ECDH) is given.
-An elliptic curve is a set of points that satisfy a specific mathematical equation. The equation of an elliptic curve may have multiple forms, the standard form is called the Weierstrass equation $$ y^2 = x^3 +ax +b  $$ and its shape can look like the red curve.
-
-<img src="{{url_for('static', filename='crypt7.png')}}" alt=""><br>
-
-
-<p>An interesting fact about elliptic curves is have a group structure. That is, the set of points on the curve have associated a binary operation called point addition. The set of points on the elliptic curve is closed under addition. Thus, adding two points results in another point that is also on the elliptic curve.
-If we can add two different points on a curve, then we can also add one point to itself. And if we do it multiple times, then the resulting operations is known as a scalar multiplication and denoted as  \(Q = k\cdot P = P+P+\dots+P\) for an integer \(k\).
-Multiplication of scalars is commutative. It means that two scalar multiplications can be evaluated in any order \( \color{darkred}{k_a}\cdot\color{darkgreen}{k_b} =   \color{darkgreen}{k_b}\cdot\color{darkred}{k_a} \); this an important property that makes ECDH possible.
-It turns out that carefully if choosing an elliptic curve "correctly", scalar multiplication is easy to compute but extremely hard to reverse. Meaning, given two points \(Q\) and \(P\) such that \(Q=k\cdot P\), finding the integer k is a difficult task known as the Elliptic Curve Discrete Logarithm problem (ECDLP). This problem is suitable for cryptographic purposes.
-Alice and Bob agree on a secret key as follows. Alice generates a private key \( k_a\). Then, she uses some publicly known point \(P\) and calculates her public key as \( Q_a = k_a\cdot P\). Bob proceeds in similar fashion and gets \(k_b\) and \(Q_b = k_b\cdot P\). To agree on a shared secret, each party multiplies their private key with the public key of the other party. The result of this is the shared secret. Key agreement as described above, works thanks to the fact that scalars can commute: 
-$$  \color{darkgreen}{k_a} \cdot Q_b = \color{darkgreen}{k_a} \cdot  \color{darkred}{k_b} \cdot P \iff \color{darkred}{k_b} \cdot \color{darkgreen}{k_a} \cdot P = \color{darkred}{k_b} \cdot Q_a $$
-There is a vast theory behind elliptic curves. An introduction to elliptic curve cryptography was posted before and more details can be found in this book. Now, lets describe SIDH and compare with ECDH.</p>
-<h3>Isogenies on Elliptic Curves</h3>
-<p>Before explaining the details of SIDH key exchange, I’ll explain the 3 most important concepts, namely: j-invariant, isogeny and its kernel.
-Each curve has a number that can be associated to it. Let’s call this number a j-invariant. This number is not unique per curve, meaning many curves have the same value of j-invariant, but it can be viewed as a way to group multiple elliptic curves into disjoint sets. We say that two curves are isomorphic if they are in the same set, called the isomorphism class. The j-invariant is a simple criterion to determine whether two curves are isomorphic. The j-invariant of a curve \(E\) in Weierstrass form \( y^2 = x^3 + ax + b\) is given as $$ j(E) = 1728\frac{4a^3}{4a^3 +27b^2} $$
-When it comes to isogeny, think about it as a map between two curves. Each point on some curve \( E \) is mapped by isogeny to the point on isogenous curve \( E' \). We denote mapping from curve \( E \) to \( E' \) by isogeny \( \phi \) as:
-$$\phi: E \rightarrow E' $$
-It depends on the map if those two curves are isomorphic or not. Isogeny can be visualised as:</p>
-
-<img src="{{url_for('static', filename='crypt8.png')}}" alt=""><br>
-
-<p>There may exist many of those mappings, each curve used in SIDH has small number of isogenies to other curves. Natural question is how do we compute such isogeny. Here is where the kernel of an isogeny comes. The kernel uniquely determines isogeny (up to isomorphism class). Formulas for calculating isogeny from its kernel were initially given by J. Vélu and the idea of calculating them efficiently was extended.
-To finish, I will summarize what was said above with a picture.</p>
-
-<img src="{{url_for('static', filename='crypt9.png')}}" alt=""><br>
-
-<p>There are two isomorphism classes on the picture above. Both curves \(E_1\) and \(E_2\) are isomorphic and have  j-invariant = 6. As curves \(E_3\) and \(E_4\) have j-invariant=13, they are in a different isomorphism class. There exists an isogeny \(\phi_2\) between curve \(E_3\) and \(E_2\), so they both are isogeneous. Curves \( \phi_1 \) and \( E_2 \) are isomorphic and there is isogeny \( \phi_1 \) between them. Curves \( E_1\) and \(E_4\) are not isomorphic.
-For brevity I’m skipping many important details, like details of the finite field, the fact that isogenies must be separable and that the kernel is finite. But curious readers can find a number of academic research papers available on the Internet.</p>
-<h3>Big picture: similarities with ECDH</h3>
-<p>Let’s generalize the ECDH algorithm described above, so that we can swap some elements and try to use Supersingular Isogeny Diffie-Hellman.
-Note that what actually happens during an ECDH key exchange is:
-<ul>
-    <li>We have a set of points on elliptic curve, set S</li>
-    <li>We have another group of integers used for point multiplication, G</li>
-    <li>We use an element from Z to act on an element from S to get another element from S:</li>
-</ul>
-$$ G \cdot S \rightarrow S $$
-Now the question is: what is our G and S in an SIDH setting? For SIDH to work, we need a big set of elements and something secret that will act on the elements from that set. This “group action” must also be resistant to attacks performed by quantum computers.
-In the SIDH setting, those two sets are defined as:
-<ul>
-    <li>Set S is a set (graph) of j-invariants, such that all the curves are supersingular: \( S = [j(E_1), j(E_2), j(E_3), .... , j(E_n)]\)</li>
-    <li>Set G is a set of isogenies acting on elliptic curves and transforming, for example, the elliptic curve \(E_1\) into \(E_n\):</li>
-</ul>
-</p>
-<h3>Random walk on supersingular graph</h3>
-<p>When we talk about Isogeny Based Cryptography, as a topic distinct from Elliptic Curve Cryptography, we usually mean algorithms and protocols that rely fundamentally on the structure of isogeny graphs. An example of such a (small) graph is pictured below.
-Animation based on Chloe Martindale slide deck
-Each vertex of the graph represents a different j-invariant of a set of supersingular curves. The edges between vertices represent isogenies converting one elliptic curve to another. As you can notice, the graph is strongly connected, meaning every vertex can be reached from every other vertex. In the context of isogeny-based crypto, we call such a graph a supersingular isogeny graph. I’ll skip some technical details about the construction of this graph (look for those here or here), but instead describe ideas about how it can be used.
-As the graph is strongly connected, it is possible to walk a whole graph by starting from any vertex, randomly choosing an edge, following it to the next vertex and then start the process again on a new vertex. Such a way of visiting edges of this graph is called a random walk.
-The random walk is a key concept that makes isogeny based crypto feasible. When you look closely at the graph, you can notice that each vertex has a small number of edges incident to it, this is why we can compute the isogenies efficiently. But also for any vertex there is only a limited number of isogenies to choose from, which doesn’t look like good base for a cryptographic scheme. The key question is - where does the security of the scheme come from exactly? In order to get it, it is necessary to visit a couple hundred vertices. What it means in practice is that secret isogeny (of large degree) is constructed as a composition of multiple isogenies (of small, prime degree).  Which means, the secret isogeny is:</p>
-<img src="{{url_for('static', filename='crypt10.png')}}" alt=""><br>
-
-<p>This property and properties of the isogeny graph are what makes some of us believe that scheme has a good chance to be secure. More specifically, there is no efficient way of finding a path that connects \( E_0 \) with \( E_n \), even with quantum computer at hand. The security level of a system depends on value n - the number of steps taken during the walk.
-The random walk is a core process used when both generating public keys and computing shared secrets. It starts with party generating random value m (see more below), starting curve \(E_0\) and points P and Q on this curve. Those values are used to compute the kernel of an isogeny \( R_1 \) in the following way:
-$$ R_1 = P + m \cdot Q $$
-Thanks to formulas given by Vélu we can now use the point \( R_1 \) to compute the isogeny, the party will choose to move from a vertex to another one. After the isogeny \( \phi_{R_1} \) is calculated it is applied to \( E_0 \)  which results in a new curve \( E_1 \):
-$$ \phi_{R_1}: E_0 \rightarrow E_1 $$
-Isogeny is also applied to points P and Q. Once on \( E_1 \) the process is repeated. This process is applied n times, and at the end a party ends up on some curve \( E_n \) which defines isomorphism class, so also j-invariant.</p>
-<h3>Supersingular Isogeny Diffie-Hellman</h3>
-<p>The core idea in SIDH is to compose two random walks on an isogeny graph of elliptic curves in such a way that the end node of both ways of composing is the same.
-In order to do it, scheme sets public parameters - starting curve \( E_0 \) and 2 pairs of base points on this curve \( (PA,QA) \) , \( (PB,QB) \). Alice generates her random secret keys m, and calculates a secret isogeny \( \phi_q \) by performing a random walk as described above. The walk finishes with 3 values: elliptic curve \( E_a \) she has ended up with and pair of points \( \phi_a(PB) \) and \( \phi_a(QB) \) after pushing through Alice’s secret isogeny. Bob proceeds analogously which results in the triple \( {E_b, \phi_b(PA), \phi_b(QA)} \). The triple forms a public key which is exchanged between parties.
-The picture below visualizes the operation. The black dots represent curves grouped in the same isomorphism classes represented by light blue circles. Alice takes the orange path ending up on a curve \( E_a \) in a separate isomorphism class than Bob after taking his dark blue path ending on \( E_b \). SIDH is parametrized in a way that Alice and Bob will always end up in different isomorphism classes.</p>
-<img src="{{url_for('static', filename='crypt11.png')}}" alt=""><br>
-<p>Upon receipt of triple \( { E_a, \phi_a(PB), \phi_a(QB) } \)  from Alice, Bob will use his secret value m to calculate a new kernel - but instead of using point \(PA\) and \(QA\) to calculate an isogeny kernel, he will now use images \( \phi_a(PB) \) and \( \phi_a(QB) \) received from Alice:
-$$ R’_1 = \phi_a(PB) + m \cdot \phi_a(QB) $$
-Afterwards, he uses \( R’_1 \) to start the walk again resulting in the isogeny \( \phi’_b: E_a \rightarrow E_{ab} \). Allice proceeds analogously resulting in the isogeny \(\phi’_a: E_b \rightarrow E_{ba} \). With isogenies calculated this way, both Alice and Bob will converge in the same isomorphism class. The math math may seem complicated, hopefully the picture below makes it easier to understand.</p>
-<img src="{{url_for('static', filename='crypt12.png')}}" alt=""><br>
-<p>Bob computes a new isogeny and starts his random walk from \( E_a \) received from Alice. He ends up on some curve \(E_{ba}\). Similarly, Alice calculates a new isogeny, applies it on \( E_b \) received from Bob and her random walk ends on some curve \(E_{ab}\). Curves \(E_{ab}\) and \(E_{ba}\) are not likely to be the same, but construction guarantees that they are isomorphic. As mentioned earlier, isomorphic curves have the same value of j-invariant,  hence the shared secret is a value of j-invariant \(j(E_{ab})\).
-Coming back to differences between SIDH and ECDH - we can split them into four categories: the elements of the group we are operating on, the cornerstone computation required to agree on a shared secret, the elements representing secret values, and the difficult problem on which the security relies.
-Comparison based on Craig Costello’ s slide deck.
-In ECDH there is a secret key which is an integer scalar, in case of SIDH it is a secret isogeny, which also is generated from an integer scalar. In the case of ECDH one multiplies a point on a curve by a scalar, in the case of SIDH it is a random walk in an isogeny graph. In the case of ECDH, the public key is a point on a curve, in the case of SIDH, the public part is a curve itself and the image of some points after applying isogeny. The shared secret in the case of ECDH is a point on a curve, in the case of SIDH it is a j-invariant.</p>
-<h3>SIKE: Supersingular Isogeny Key Encapsulation</h3>
-<p>SIDH could potentially be used as a drop-in replacement of the ECDH protocol. We have actually implemented a proof-of-concept and added it to our implementation of TLS 1.3 in the tls-tris library and described (together with Mozilla) implementation details in this draft. Nevertheless, there is a problem with SIDH - the keys can be used only once. In 2016, a few researchers came up with an active attack on SIDH which works only when public keys are reused. In the context of TLS, it is not a big problem, because for each session a fresh key pair is generated (ephemeral keys), but it may not be true for other applications.
-SIKE is an isogeny key encapsulation which solves this problem. Bob can generate SIKE keys, upload the public part somewhere in the Internet and then anybody can use it whenever he wants to communicate with Bob securely. SIKE reuses SIDH - internally both sides of the connection always perform SIDH key generation, SIDH key agreement and apply some other cryptographic primitives in order to convert SIDH to KEM. SIKE is implemented in a few variants - each variant corresponds to the security levels using 128-, 192- and 256-bit secret keys. Higher security level means longer running time. More details about SIKE can be found here.
-SIKE is also one of the candidates in NIST post-quantum "competition".
-I’ve skipped many important details to give a brief description of how isogeny based crypto works. If you’re curious and hungry for details, look at either of these Cloudflare meetups, where Deirdre Connolly talked about isogeny-based cryptography or this talk by Chloe Martindale during PQ Crypto School 2017. And if you would like to know more about quantum attacks on this scheme, I highly recommend this work.</p>
-<h3>Conclusion</h3>
-<p>Quantum computers that can break meaningful cryptographic parameter settings do not exist, yet. They won't be built for at least the next few years. Nevertheless, they have already changed the way we look at current cryptographic deployments. There are at least two reasons it’s worth investing in PQ cryptography:
-<ul>
-    <li>It takes a lot of time to build secure cryptography and we don’t actually know when today’s classical cryptography will be broken. There is a need for a good mathematical base: an initial idea of what may be secure against something that doesn't exist yet. If you have an idea, you also need good implementation, constant time, resistance to things like time and cacheside-channels, DFA, DPA, EM, and a bunch of other abbreviations indicating side-channel resistance. There is also deployment of, for example, algorithms based on elliptic curves were introduced in '85, but started to really be used in production only during the last decade, 20 or so years later. Obviously, the implementation must be blazingly fast! Last, but not least, integration: we need time to develop standards to allow integration of PQ cryptography with protocols like TLS.</li>
-<li>Even though efficient quantum computers probably won't exist for another few years, the threat is real. Data encrypted with current cryptographic algorithms can be recorded now with hopes of being broken in the future.</li>
-</ul>
-<p>Cloudflare is motivated to help build the Internet of tomorrow with the tools at hand today. Our interest is in cryptographic techniques that can be integrated into existing protocols and widely deployed on the Internet as seamlessly as possible. PQ cryptography, like the rest of cryptography, includes many cryptosystems that can be used for communications in today’s Internet; Alice and Bob need to perform some computation, but they do not need to buy new hardware to do that.
-</p>
-<p>Cloudflare sees great potential in those algorithms and believes that some of them can be used as a safe replacement for classical public-key cryptosystems. Time will tell if we’re justified in this belief!</p>
 
 <p><a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm">Shor&apos;s algorithm</p>
 

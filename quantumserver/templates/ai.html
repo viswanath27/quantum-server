@@ -55,6 +55,13 @@ body {
 </style>
 
 
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -105,19 +112,44 @@ function closeNav() {
 </script>
 
 
-
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
 
 
 <h1>AI IN QUNTUM COMPUTING</h1>
-<p align="RIGHT"><a href="{{ url_for('index') }}" >Home Page</a></p>
-<h1><a href="https://physics.aps.org/articles/v12/74">[Article 1]: Viewpoint: Neural Networks Take on Open Quantum Systems</a></h1>
+
+<p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://physics.aps.org/articles/v12/74">[ARTICLE 1]: Viewpoint: Neural Networks Take on Open Quantum Systems</a></h3>
 
 <p>Simulating a quantum system that exchanges energy with the outside world is notoriously hard, but the necessary computations might be easier with the help of neural networks.
 
-Neural networks are behind technologies that are revolutionizing our daily lives, such as face recognition, web searching, and medical diagnosis. These general problem solvers reach their solutions by being adapted or “trained” to capture correlations in real-world data. Having seen the success of neural networks, physicists are asking if the tools might also be useful in areas ranging from high-energy physics to quantum computing <a href="https://arxiv.org/pdf/1903.10563.pdf">[Machine learning and the physical sciences]</a>. Four research groups now report on using neural network tools to tackle one of the most computationally challenging problems in condensed-matter physics—simulating the behaviour of an open many-body quantum system [2–5]. This scenario describes a collection of particles—such as the qubits in a quantum computer —that both interact with each other and exchange energy with their environment. For certain open systems, the new work might allow accurate simulations to be performed with less computer power than existing methods.</p>
+Neural networks are behind technologies that are revolutionizing our daily lives, such as face recognition, web searching, and medical diagnosis. These general problem solvers reach their solutions by being adapted or “trained” to capture correlations in real-world data. Having seen the success of neural networks, physicists are asking if the tools might also be useful in areas ranging from high-energy physics to quantum computing <a href="https://arxiv.org/pdf/1903.10563.pdf">[Machine learning and the physical sciences]</a>. Four research groups now report on using neural network tools to tackle one of the most computationally challenging problems in condensed-matter physics—simulating the behaviour of an open many-body quantum system [2–5]. This scenario describes a collection of particles—such as the qubits in a quantum computer —that both interact with each other and exchange energy with their environment. For certain open systems, the new work might allow accurate simulations to be performed with less computer power than existing methods.</p></div><br><br>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://medium.com/computational-neuroscience/neuromorphic-hardware-trying-to-put-brain-into-chips-259638da2f12">[ARTICLE 2]: Neuromorphic Hardware: Trying to Put Brain Into Chips</a></h3>
+<p>Up until now, chip-makers have been piggybacking on the renowned Moore’s Law for delivering successive generations of chips that have more compute capabilities and are less power hungry. Now, these advancements are slowly coming to a halt. Researchers around the world are proposing alternative architectures to continue producing systems which are faster and more energy efficient. This article discusses those alternatives and reasons why one of them might have an edge over others in averting the chip design industry from getting stymied.</p></div><br><br>
+
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://physics.aps.org/articles/v12/74">[ARTICLE 3]: Thanks to AI, we know we can teleport qubits in the real world</a></h3>
+<p>Italian researchers have shown that it is possible to teleport a quantum bit (or qubit) in what might be called a real-world situation.
+And they did it by letting artificial intelligence do much of the thinking.
+The phenomenon of qubit transfer is not new, but this work, which was led by Enrico Prati of the Institute of Photonics and Nanotechnologies in Milan, is the first to do it in a situation where the system deviates from ideal conditions.</p></div><br><br>
+
+
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://www.weforum.org/agenda/2019/06/how-the-future-of-computing-can-make-or-break-the-ai-revolution/">[Article 4]: How the future of computing can make or break the AI revolution</a></h3>
+<p>When it comes to technology trends, AI has been undeniably leading the way in recent years and is expected to continue to do so for decades to come.
+From self-driving cars to predictive medicine and personalized learning, AI is increasingly shaping both practical and intimate aspects of our everyday lives, including matching us to our better halves.When talking about AI, we often are interested in the application use cases: what is AI going to enable next? In the race towards building powerful AI systems and applications, the public, including tech-domain experts, often dismisses the close interconnection between AI and computing. However, the AI revolution that we are witnessing could not have happened without the evolution of the computing hardware and of the computing ecosystem.</p></div><br><br>
+
+
+
+
+
 <img src="{{url_for('static', filename='ai_1.png')}}" alt=""><br>
 
 <p>In an open quantum system, one typically wants to find the “steady states,” which are states that do not evolve in time. A formal theory for determining such states already exists [6]. The computational difficulty arises when the system contains more than a few quantum particles. Consider a (closed) collection of N spins that can point either up or down. The amplitude of the wave function for a given spin configuration (say, up, down, up, up,…) is a complex number whose absolute value squared gives the probability of observing the configuration. To describe the entire spin system, a complex number has to be specified for each of the possible states. Simply storing this information for just 20 spins would take about 8 gigabytes of RAM, and the amount would double with each additional spin. Handling the same number of spins in an open system is even harder because the spins must be described by a “density matrix” with 2<sup>N</sup> × 2<sup>N</sup> matrix elements. The attraction of a neural network is that it can potentially approximate the wave function, or density matrix, with a lot less information. A neural network is like a mathematical “box” that takes as its input a string of numbers (a vector or tensor) and outputs another string. The box is a parameterized function, and its parameters are optimized for a given task. For the specific case of simulating an N-body quantum system, the neural-network function serves as a “guess” for the wave function, and the states of the N objects serve as inputs. Researchers then optimize the function or by minimizing a physical quantity that depends on the wave function. Once the right guess is in hand, it can be used to calculate other physical properties, and with far fewer than parameters.</p>

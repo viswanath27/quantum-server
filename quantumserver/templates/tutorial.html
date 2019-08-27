@@ -1,82 +1,15 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TUTORIALS</title>
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+{% extends "layout.html" %}
+{% block title %}
+  Index
+{% endblock %}
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+{% block head %}
+{{ super() }}
+{% endblock %}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
+{% block content %}
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
-
-    <nav class="navbar navbar-inverse">
-        <div class="contianer-fluid ">
-            <!--LOGO-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-        </div>
-    </nav>
-
-</head>
-<body>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -109,9 +42,12 @@ function closeNav() {
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
 
-<h1>VIDEOS & PODCATS</h1>
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3>VIDEOS & PODCATS</h3>
 <p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
+</div><br><br>
 
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
 <h3>READING MATERIAL</h3>
 <ul>
 <li><a href="https://www.nature.com/articles/s41534-019-0167-6.pdf">https://www.nature.com/articles/s41534-019-0167-6.pdf</a> </li>
@@ -119,6 +55,9 @@ function closeNav() {
 <li><a href="https://www.quantamagazine.org/"> https://www.quantamagazine.org/</a></li>
 
 </ul> 
+</div><br><br>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
 <h3> GOOGLE&apos;S 4 VIDEO SERIES </h3>
 <ul>
 <li><a href="https://www.youtube.com/watch?v=hpHfzYTOMGI&list=PLQY2H8rRoyvwcpm6Nf-fL4sIYQUXtq3HR&index=1">Introdcution</a></li>
@@ -127,6 +66,7 @@ function closeNav() {
 <li><a href="https://www.youtube.com/watch?v=16ZfkPRVf2w&list=PLQY2H8rRoyvwcpm6Nf-fL4sIYQUXtq3HR&index=4">Programming in a Quantum Computer</a></li>
 <li><a href="https://www.youtube.com/watch?v=gylmjTOUfCQ&list=PLQY2H8rRoyvwcpm6Nf-fL4sIYQUXtq3HR&index=5">Challenges in Quantum Computing Technology</a></li>
 </ul>
+</div><br><br>
 
 <h3>LINKS</h3>
 <ul>
@@ -134,5 +74,5 @@ function closeNav() {
 <li><a href="https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vLOKI_uy7f8w/v4.mp3">https://assets.bwbx.io/av/users/iqjWHBFdfxIU/vLOKI_uy7f8w/v4.mp3</a></li>
 </ul>
 </div>
-</body>
-</html>
+
+{% endblock %}

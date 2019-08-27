@@ -1,82 +1,15 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>MATERIALS IN QUANTUM</title>
+{% extends "layout.html" %}
+{% block title %}
+  Index
+{% endblock %}
 
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
+{% block head %}
+{{ super() }}
+{% endblock %}
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
+{% block content %}
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
-
-    <nav class="navbar navbar-inverse">
-        <div class="contianer-fluid ">
-            <!--LOGO-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-        </div>
-    </nav>
-
-</head>
 <body>
 
 <div id="mySidenav" class="sidenav">
@@ -113,38 +46,19 @@ function closeNav() {
 
 <h1>MATERIAL SCEINCE IN QUNTUM COMPUTING</h1>
 <p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
-<h1><a href="https://phys.org/news/2019-06-material-high-potential-quantum.html?fbclid=IwAR3lrp8be1pegJ-vG81UAWkq16NDLouaVi5SPpDf41soAYQLtw0puVXWKR8">[Article 1]: New material shows high potential for quantum computing</a></h1>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://phys.org/news/2019-06-material-high-potential-quantum.html?fbclid=IwAR3lrp8be1pegJ-vG81UAWkq16NDLouaVi5SPpDf41soAYQLtw0puVXWKR8">[Article 1]: New material shows high potential for quantum computing</a></h3>
 
 
 <p>A joint team of scientists at the University of California, Riverside, and the Massachusetts Institute of Technology is getting closer to confirming the existence of an exotic quantum particle called Majorana fermion, crucial for fault-tolerant quantum computing—the kind of quantum computing that addresses errors during its operation.</p>
 <p>Quantum computing uses quantumphenomena to perform computations. Majorana fermions exist at the boundary of special superconductors called topological superconductors, which have a superconducting gap in their interiors and harbor Majorana fermions outside, at their boundaries. Majorana fermions are one of the most sought-after objects in quantum physics because they are their own antiparticles, they can split the quantum state of an electron in half, and they follow different statistics compared to electrons. Though many have claimed to have identified them, scientists still cannot confirm their exotic quantum nature.</p>
-<p>The UCR-MIT team overcame the challenge by developing a new heterostructure material system, based on gold, that could be potentially used to demonstrate the existence and quantum nature of Majorana fermions. Heterostructure materials are made up of layers of drastically dissimilar materials that, together, show completely different functionalities when compared to their individual layers.</p>
-<p>"It is highly nontrivial to find a material system that is naturally a topological superconductor," said Peng Wei, an assistant professor of physics and astronomy and a condensed matter experimentalist, who co-led the study, appearing in Physical Review Letters, with Jagadeesh Moodera and Patrick Lee of MIT. "A material needs to satisfy several stringent conditions to become a topological superconductor."</p>
-<p>The Majorana fermion, considered to be half of an electron, is predicted to be found at the ends of a topological superconductor nanowire. Interestingly, two Majorana fermions can combine with each other to make up one electron, allowing the quantum states of the electron to be stored nonlocally—an advantage for fault-tolerant quantum computing.</p>
-<p>In 2012, MIT theorists, led by Lee, predicted that heterostructures of gold can become a topological superconductor under strict conditions. Experiments done by the UCR-MIT team have achieved all the needed conditions for heterostructures of gold.</p>
-<p>"Achieving such heterostructure is highly demanding because several material physics challenges needed to be addressed first," said Wei, a UCR alum who returned to campus in 2016 from MIT.</p>
-<p>Wei explained that the research paper shows superconductivity, magnetism, and electrons' spin-orbit coupling can co-exist in gold—a difficult challenge to meet—and be manually mixed with other materials through heterostructures.</p>
-<p>"Superconductivity and magnetism ordinarily do not coexist in the same material," he said.Gold is not a superconductor, he added, and neither are the electron states on its surface."Our paper shows for the first time that superconductivity can be brought to the surface states of gold, requiring new physics," he said. "We show that it is possible to make the surface state of gold a superconductor, which has never been shown before."</p>
-<p>The research paper also shows the electron density of superconductivity in the surface states of gold can be tuned."This is important for future manipulation of Majorana fermions, required for better quantum computing," Wei said. "Also, the surface state of gold is a two-dimensional system that is naturally scalable, meaning it allows the building of Majorana fermion circuits."Besides Wei, Moodera, and Lee, the research team also includes Sujit Manna and Marius Eich of MIT.</p>
+</div><br><br>
 
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://futurism.com/stacking-graphene-new-quantum-states">[Article 2]: Stacking Graphene Creates Entirely New Quantum States</a></h3>
 
-<h1><a href="https://futurism.com/stacking-graphene-new-quantum-states">[Article 2]: Stacking Graphene Creates Entirely New Quantum States</a></h1>
-
-<h3>Unavoidable Errors</h3>
-The qubits – the basic units of quantum communication – central to quantum computers are incredibly fragile, prone to switching between states at the slightest disruption.
-This has made error correction a major focus of quantum computer developers — they need to find a way to keep the systems functioning even if an individual qubit is corrupted. Not only that, but they have to do so without actually measuring the qubits, since that would destroy their ability to exist in multiple states at once.
-No easy task.
-But now, a team of U.S. physicists has used the “supermaterial” graphene to uncover several entirely new quantum states — and they think the discovery could lead to quantum computers that don’t need error correction at all.
-<h3>Super Sandwich</h3>
-Graphene is a material comprising a single layer of carbon atoms arranged in a hexagonal lattice.
-Researchers first isolated it from graphite, the mineral found in most pencils, in 2004, and ever since, they’ve been wowed by graphene’s remarkable properties — despite being so thin and light, it’s incredibly strong and a remarkable conductor of both heat and electricity.
-For their study, which was published in the journal Nature Physics on Monday, researchers from Brown and Columbia Universities stacked two layers of graphene on top of one another, separating them with a layer of another two-dimensional material — hexagonal boron nitride — which they also wrapped around the entire graphene sandwich.
-When they then blasted the structure with incredibly strong magnetic fields, they found it produced never-before-seen quantum states.
-<h3>Quantum Computers</h3>
-The discovery of these new quantum states is a remarkable achievement in and of itself — as researcher Jia Li, an assistant professor of physics at Brown, noted in a press release, “The findings show that stacking 2D materials together in close proximity generates entirely new physics.”
-However, the specific states themselves are also remarkable, particularly in terms of the role they could play in the development of quantum computers.
-“Of particular interest are several new states that have the potential of hosting non-Abelian wave functions — states that don’t quite fit the traditional composite fermion model,” Jim Hone, a professor of mechanical engineering at Columbia, said in the press release.
-Electrons in non-Abelian states are able to “remember” their past positions in relation to one another, according to the press release, and that ability could lead to the creation of quantum computers that don’t need error correction at all — eliminating one of the major hurdles between us and these incredibly powerful devices.
+<p>The qubits – the basic units of quantum communication – central to quantum computers are incredibly fragile, prone to switching between states at the slightest disruption. This has made error correction a major focus of quantum computer developers — they need to find a way to keep the systems functioning even if an individual qubit is corrupted. Not only that, but they have to do so without actually measuring the qubits, since that would destroy their ability to exist in multiple states at once. No easy task.But now, a team of U.S. physicists has used the “supermaterial” graphene to uncover several entirely new quantum states — and they think the discovery could lead to quantum computers that don’t need error correction at all.</p></div><br><br>
 
 
 
@@ -154,5 +68,5 @@ Electrons in non-Abelian states are able to “remember” their past positions 
   <li><a href="https://futurism.com/stacking-graphene-new-quantum-states">https://futurism.com/stacking-graphene-new-quantum-states</a></li>
 </ul>
 </div>
-</body>
-</html>
+
+{% endblock %}

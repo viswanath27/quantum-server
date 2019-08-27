@@ -1,83 +1,14 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TELEPORTATION</title>
+{% extends "layout.html" %}
+{% block title %}
+  Index
+{% endblock %}
 
+{% block head %}
+{{ super() }}
+{% endblock %}
 
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
-
-    <nav class="navbar navbar-inverse">
-        <div class="contianer-fluid ">
-            <!--LOGO-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-        </div>
-    </nav>
-
-</head>
-<body>
+{% block content %}
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -113,56 +44,18 @@ function closeNav() {
 
 <h1>QUANTUM TELEPORTATION</h1>
 <p align="RIGHT"><a href="{{ url_for('logout') }}" >Logout</a></p>
-<h1><a href="https://interestingengineering.com/japanese-researchers-teleport-quantum-information-into-a-diamond">[Article 1]: Japanese Researchers Teleport Quantum Information into a Diamond</a></h1>
+
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://interestingengineering.com/japanese-researchers-teleport-quantum-information-into-a-diamond">[Article 1]: Japanese Researchers Teleport Quantum Information into a Diamond</a></h3>
 <p>Quantum teleportation is very real. In fact, researchers have already teleported quantum information across cities and even into space. Though this sounds like an Avengers Endgame plot device, quantum teleportation has a host of powerful applications in the near future, mainly in the emergence of quantum technologies (https://interestingengineering.com/what-will-quantumcomputing- change-exactly).
-Recently, researchers from something very cool with quantum information. The team from Yokohama National University have managed teleport quantum information securely into one of the hardest structures on the planet, the diamond. The breakthrough could help us better share and store sensitive information.</p>
+Recently, researchers from something very cool with quantum information. The team from Yokohama National University have managed teleport quantum information securely into one of the hardest structures on the planet, the diamond. The breakthrough could help us better share and store sensitive information.</p></div><br><br>
 
+ 
 
-<h3>A Brief Look and Quantum Teleportation</h3>
-<p>Let’s take a brief look at quantum teleportation. For the uninitiated, quantum teleportation is a process in which quantum information can be transmitted from one location to another, with the help of classical communication and previously shared quantum entanglement between the sending and receiving location. So, what does that mean exactly? </p>
+<div class="w3-panel w3-white w3-card w3-display-container" style="margin-left: 0em;">
+<h3><a href="https://interestingengineering.com/physicists-appear-to-reverse-time-in-a-quantum-computer">[Article 2]: Physicists Appear to "Reverse Time" in a Quantum Computer</a></h3>
+ <p>Using a quantum computer, scientists appear to have reversed the entropy of a two-qubit and a three-qubit system, opening new avenues of error correction in quantum computers. Scientists appear to have “reversed time” in a two-bit and a three-bit quantum computer after calculating the probability of the phenomenon occurring naturally in a localized electron. Reversing The Entropy of a Two-Qubit System . Scientists in Russia, Switzerland, and the US have come together to apparently reverse the entropy of a two-qubit quantum computer with 85% accuracy and about 50% accuracy in a three-qubit system, though they note that the remaining inaccuracy is due to the imperfections in the quantum computer itself, not their algorithm.</p></div><br><br>
 
-<p>RELATED: MOVEMENT OF QUANTUM PARTICLES OBSERVED IN HIGH RESOLUTION</p>
-<p><a href="https://interestingengineering.com/movement-of-quantum-particles-observed-in-high-resolution">(https://interestingengineering.com/movement-of-quantum-particles-observed-in-high-resolution)</a>
-In short quantum teleportation does not truly involve in the sci-fi sense “teleportation”, so do not get too excited yet. Quantum teleportation <a href="https://interestingengineering.com/new-research-is-using-quantum-physics-for-safe-unhacked-data-teleporting">https://interestingengineering.com/new-research-is-using-quantum-physics-for-safe-unhacked-data-teleporting</a> involves taking information from one place and recreating it in another all thanks to the quantum phenomena, quantum entanglement. Using this principle, researchers did something completely new with quantum information.</p>
-
-<p>According to Hideo Kosaka, a professor of engineering at Yokohama National University and an author on the study <a href="https://www.nature.com/articles/s42005-019-0158-0">https://www.nature.com/articles/s42005-019-0158-0</a>, "Quantum teleportation permits the transfer of quantum information into an otherwise inaccessible space. It also permits the transfer of information into a quantum memory without revealing or destroying the stored quantum information."</p>
-
-<h3>Quantum teleportation-based state transfer of photon polarization into a carbon spin in diamond: </h3>
-<p><a href="https://www.nature.com/articles/s42005-019-0158-0.pdf">https://www.nature.com/articles/s42005-019-0158-0.pdf</a></p>
-
-
-<h3>The Diamond is forever</h3>
-In their study published in the journal Communications Physics <a href="https://www.nature.com/articles/s42005-019-0158-0">https://www.nature.com/articles/s42005-019-0158-0</a>, Japanese researchers manipulated an electron and a carbon isotope inside a diamond defect known to the science community as a itrogenvacancy center.
-To make this even possible, researchers constructed an oscillating magnetic field around the diamond, then used microwave and radio waves to entangle the electron and the carbon atom’s nucleus. When items become entangled, the effect on one particle affects the other. Picture one electron on the side of the table and the carbon atom’s on the other end of the table. Then the researchers had the manipulated electron absorb a photon holding quantum information <a href="https://interestingengineering.com/physicists-appear-to-reverse-time-in-a-quantum-computer">https://interestingengineering.com/physicists-appear-to-reverse-time-in-a-quantum-computer</a>.
-
-The photon’s polarization state transferred to the carbon, which means the team was able to transfer quantum information.
-"Our ultimate goal is to realize scalable quantum repeaters for long-haul quantum communications and distributed quantum
-computers for large-scale quantum computation and metrology," Kosaka said.
-Video: <a href="https://youtu.be/yb38jozeDOs">https://youtu.be/yb38jozeDOs</a>  
-
-
-<h1><a href="https://interestingengineering.com/physicists-appear-to-reverse-time-in-a-quantum-computer">[Article 2]: Physicists Appear to "Reverse Time" in a Quantum Computer</a></h1>
- <p>Using a quantum computer, scientists appear to have reversed the entropy of a two-qubit and a three-qubit system, opening new avenues of error correction in quantum computers. Scientists appear to have “reversed time” in a two-bit and a three-bit quantum computer after calculating the probability of the phenomenon occurring naturally in a localized electron.
-<h3>Reversing The Entropy of a Two-Qubit System</h3>
-Scientists in Russia, Switzerland, and the US have come together to apparently reverse the entropy of a two-qubit quantum computer with 85% accuracy and about 50% accuracy in a three-qubit system, though they note that the remaining inaccuracy is due to the imperfections in the quantum computer itself, not their algorithm.
- Entropy, defined as the measure of disorder in a system, naturally increases over time, as nature moves from order to disorder. In the case of the quantum computer the researchers built, the system that begins in a state where the qubits are initially 0s, but over time degrade into a randomness of 1s and 0s. This is in keeping with the Second Law of Thermodynamics (SLT), which states that in an isolated system, entropy never decreases. What the researchers have done is apparently rewind this entropy to return to the quantum computers original state on demand, offering new possibilities for error correction in quantum computers, which could greatly advance their deployment.
-<h3>Spontaneous Time Rewind in Localized Electrons</h3>
-The researchers from the Moscow Institute of Physics and Technology (MIPT), Eidgenössische Technische Hochschule Zürich (ETH Zürich), and Argonne National Laboratory, US (ANL)—who published their findings today in the journal Scientific Reports—, began by calculating the probability of a localized electron would revert to its earlier state from one moment to the next.
- "Suppose the electron is localized when we begin observing it. This means that we're pretty sure about its position in space. The laws of quantum mechanics prevent us from knowing it with absolute precision, but we can outline a small region where the electron is localized," says study co-author Andrey Lebedev from MIPT and ETH Zürich.</p>
-<p>The evolution of the state of the electron from one moment to the next is determined by Schrödinger's equation. This equation makes no distinction between the points in time, but in accordance with the SLT, the area which the electron can appear grows quickly.
-"However, Schrödinger's equation is reversible," adds Valerii Vinokur, of ANL and a co-author of the paper. "Mathematically, it means that under a certain transformation, called complex conjugation, the equation will describe a 'smeared' electron localizing back into a small region of space over the same time period."
-Though such a reversal hasn’t been observed naturally, the scientists believed that it was theoretically possible.
-The researchers compare this to a billiard ball hitting another. If you recorded the event normally, an equation would govern the behaviour of the different positions and velocities of the billiard balls—in other words, their states at any given moment.
-However, if you reverse the recording, the very same equation would govern that state transition as well. Essentially, 2X equals Y, but Y also equals 2X, depending on which way you want to read the equation. Both are valid and there is no way to tell which form was the “original” equation.
- In the case of an electron, it was theoretically possible to run Schrödinger's equation backwards, so that if the equation governing the electron’s state transition was Y = 2X, you can get to Y starting from 2X using the very same equation, 2X = Y.
-In order to determine how often this phenomenon occurs naturally, the team calculated the probability of an electron “smearing out” over a fraction of a second and spontaneously localizing into a previous state, a more precise way of saying going backward in time.
-They calculated that if you looked at 10 billion newly localized electrons over the entire life of the universe—13.7 billion years—every second, you would observe this phenomenon only once, and even then, it would be a single electron moving one ten-billionth of a second back in time.</p>
-
-<h3>Rewinding Time On Demand</h3>
-If the probability of a single electron evolving into a past state is all but impossible, how then have these scientists recreated the effect in the quantum states of qubits with a success rate of 85% in a two-qubit system and just under 50% for a three-qubit system?
-In using the billiard ball analogy, rather than two billiard balls, this is more akin to using a rack of billiard balls, breaking them with a cue ball, and having them reassemble into a pyramid.
-Essentially, the researchers designed an algorithm that they describe as giving the billiard table a “kick” which reverses the state changes in the qubits, reverting them backwards to their previous states. This would be like striking the billiard table in just the precise place with just the precise force to send all of the balls directly into reverse, eventually reforming into a pyramid.
-"Our algorithm could be updated and used to test programs written for quantum computers and eliminate noise and errors," Lebedev explained
  
 <h2>LINKS</h2>
 <ul>
@@ -170,5 +63,6 @@ Essentially, the researchers designed an algorithm that they describe as giving 
 <li><a href="https://interestingengineering.com/physicists-appear-to-reverse-time-in-a-quantum-computer">https://interestingengineering.com/physicists-appear-to-reverse-time-in-a-quantum-computer</a></li> 
 </ul>
 </div>
-</body>
-</html>
+
+
+{% endblock %}

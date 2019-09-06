@@ -30,7 +30,7 @@ def register():
     return render_template('register.html', title='Register', form=form)
 
 
-
+@app.route("/", methods=['GET','POST'])
 @app.route("/login", methods=['GET','POST'])
 def login():
     db.create_all()

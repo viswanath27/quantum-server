@@ -90,7 +90,7 @@ def iot():
 def crypto():
     return render_template('crypto.html')
 
-@app.route("/")
+#@app.route("/")
 @app.route("/intro")
 def intro():
     return render_template("intro.html")

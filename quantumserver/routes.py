@@ -12,6 +12,19 @@ def dbcreate():
     #return render_template("intro.html")
 '''
 
+posts=[
+{
+    'author':'Viswanath',
+    'title':'First post',
+    'content':'This is first post',
+    'date_posted':'April 20, 2018'
+},
+{
+    'author':'Vissu',
+    'title':'Second post',
+    'content':'This is second post',
+    'date_posted':'April 28,2018'
+}]
 
 
 @app.route("/register",methods=['GET','POST'])
@@ -59,7 +72,7 @@ def net():
 
 @app.route("/ai")
 def ai():
-    return render_template('ai.html')
+    return render_template('ai.html',posts=posts)
 
 @app.route("/material")
 def material():
